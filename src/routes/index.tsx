@@ -121,16 +121,16 @@ function HomePage() {
             </h2>
             <div className="space-y-5 text-forest/80 leading-relaxed max-w-xl">
               <p>
-                BespokeFurniture9ja began in a small workshop off Admiralty Way, born from a quiet refusal — that the speed of mass production had forgotten what wood remembers.
+                BespokeFurniture9ja was founded by Badmus Soliu Olasubomi — an award-winning furniture brand built on a single promise: premium quality at an affordable price. Our greenhouse showroom in Yaba has become a Lagos landmark.
               </p>
               <p>
-                We work with timber sourced from sustainable lots in Nigeria's southern rain belts, selecting each board for grain memory and structural integrity. Pieces take weeks, sometimes months. They are meant to take longer than that.
+                We work with timber sourced from sustainable lots in Nigeria's southern rain belts, selecting each board for grain memory and structural integrity. Every piece is built to order in our factory and delivered nationwide.
               </p>
             </div>
             <div className="mt-12 grid grid-cols-3 gap-8 max-w-md">
-              <Stat value="12+" label="Years of practice" />
-              <Stat value="200" label="Pieces commissioned" />
-              <Stat value="100%" label="Hand finished" />
+              <Stat value="89.5K" label="Instagram family" />
+              <Stat value="1,700+" label="Pieces shared" />
+              <Stat value="36" label="States delivered" />
             </div>
           </div>
         </div>
@@ -162,7 +162,7 @@ function HomePage() {
             "The weight of the iroko table changed the entire energy of our living space. Truly heirloom quality."
           </blockquote>
           <figcaption className="mt-10 font-mono text-[10px] uppercase tracking-[0.3em] text-sage">
-            — Tunde A., Victoria Island
+            — Client, Lagos · via @bespokefurniture9ja
           </figcaption>
         </figure>
       </section>

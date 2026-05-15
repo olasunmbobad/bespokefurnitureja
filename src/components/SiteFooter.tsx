@@ -19,11 +19,11 @@ export function SiteFooter() {
           </div>
           <div className="space-y-4 font-mono text-sm text-forest/80">
             <p>
-              <a href="https://wa.me/2348091234567" className="hover:text-forest underline decoration-sage underline-offset-4">+234 809 123 4567</a>
+              <a href="https://wa.me/2347083413055" className="hover:text-forest underline decoration-sage underline-offset-4">+234 708 341 3055</a>
               <span className="ml-3 text-sage text-[10px] uppercase tracking-widest">WhatsApp</span>
             </p>
-            <p>Lekki Phase 1, Lagos · Nigeria</p>
-            <p><a href="mailto:studio@bespoke9ja.com" className="hover:text-forest">studio@bespoke9ja.com</a></p>
+            <p>Showroom · Yaba, Lagos · Nigeria</p>
+            <p><a href="https://instagram.com/bespokefurniture9ja" target="_blank" rel="noopener" className="hover:text-forest">@bespokefurniture9ja</a></p>
           </div>
         </div>
 
