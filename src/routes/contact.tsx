@@ -64,26 +64,26 @@ function ContactPage() {
 
           {/* Info */}
           <aside className="lg:col-span-5 space-y-12">
-            <Block label="Studio">
+            <Block label="Showroom">
               <p className="text-forest/80 leading-relaxed">
-                12 Admiralty Way<br />
-                Lekki Phase 1, Lagos<br />
+                Yaba, Lagos<br />
                 Nigeria
               </p>
-              <p className="font-mono text-[10px] uppercase tracking-widest text-forest/50 mt-3">By appointment</p>
+              <p className="font-mono text-[10px] uppercase tracking-widest text-forest/50 mt-3">Nationwide delivery</p>
             </Block>
 
             <Block label="Direct">
-              <a href="tel:+2348091234567" className="block text-lg hover:text-sage transition-colors">+234 809 123 4567</a>
-              <a href="https://wa.me/2348091234567" className="inline-block mt-2 font-mono text-[10px] uppercase tracking-widest text-sage underline underline-offset-4">
+              <a href="tel:+2347083413055" className="block text-lg hover:text-sage transition-colors">+234 708 341 3055</a>
+              <a href="https://wa.me/2347083413055" className="inline-block mt-2 font-mono text-[10px] uppercase tracking-widest text-sage underline underline-offset-4">
                 WhatsApp →
               </a>
             </Block>
 
-            <Block label="Email">
-              <a href="mailto:studio@bespoke9ja.com" className="hover:text-sage transition-colors">
-                studio@bespoke9ja.com
+            <Block label="Instagram">
+              <a href="https://instagram.com/bespokefurniture9ja" target="_blank" rel="noopener" className="hover:text-sage transition-colors">
+                @bespokefurniture9ja
               </a>
+              <p className="font-mono text-[10px] uppercase tracking-widest text-forest/50 mt-2">89.5K followers</p>
             </Block>
 
             <Block label="Hours">

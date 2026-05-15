@@ -17,10 +17,10 @@ export const Route = createFileRoute("/bespoke")({
 });
 
 const steps = [
-  { n: "01", title: "Consultation", body: "Visit our Lagos studio or book a virtual session to discuss space, utility, and timber selection. We listen first." },
-  { n: "02", title: "Blueprinting", body: "Collaborative sketching and digital models. We refine proportion, joinery, and finish through samples and timber swatches." },
-  { n: "03", title: "Master Craft", body: "Eight to twelve weeks of dedicated hand-tool work in our workshop. We document each milestone for your archive." },
-  { n: "04", title: "Delivery", body: "White-glove delivery within Nigeria. International shipping arranged on request. We install, oil, and quietly leave." },
+  { n: "01", title: "Consultation", body: "Visit our Yaba showroom or book a virtual session to discuss space, utility, and timber selection. We listen first." },
+  { n: "02", title: "Blueprinting", body: "Collaborative sketching and digital models. We refine proportion, joinery, and finish — premium quality at an affordable price." },
+  { n: "03", title: "Master Craft", body: "Weeks of dedicated work in our Lagos factory. We document each milestone and share progress directly via WhatsApp." },
+  { n: "04", title: "Nationwide Delivery", body: "White-glove delivery anywhere in Nigeria. We install, finish, and leave the space ready to live in." },
 ];
 
 function BespokePage() {
@@ -115,7 +115,7 @@ function BespokePage() {
               <Link to="/contact" className="bg-forest text-paper px-7 py-3.5 rounded-full text-[11px] uppercase tracking-widest hover:bg-moss transition-colors">
                 Begin a project
               </Link>
-              <a href="https://wa.me/2348091234567" className="border border-forest/20 px-7 py-3.5 rounded-full text-[11px] uppercase tracking-widest hover:bg-forest hover:text-paper transition-colors">
+              <a href="https://wa.me/2347083413055" className="border border-forest/20 px-7 py-3.5 rounded-full text-[11px] uppercase tracking-widest hover:bg-forest hover:text-paper transition-colors">
                 WhatsApp us
               </a>
             </div>
