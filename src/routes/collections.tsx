@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
-import pieceDining from "@/assets/piece-dining.jpg";
-import pieceSideboard from "@/assets/piece-sideboard.jpg";
-import pieceArmchair from "@/assets/piece-armchair.jpg";
-import heroChair from "@/assets/hero-chair.jpg";
-import craftMood from "@/assets/craft-mood.jpg";
+import gallery1 from "@/assets/gallery-1.png";
+import gallery2 from "@/assets/gallery-2.png";
+import gallery3 from "@/assets/gallery-3.png";
+import gallery4 from "@/assets/gallery-4.png";
+import gallery5 from "@/assets/gallery-5.png";
 
 export const Route = createFileRoute("/collections")({
   head: () => ({
@@ -20,15 +20,14 @@ export const Route = createFileRoute("/collections")({
 });
 
 const pieces = [
-  { name: "Omo Dining Table", category: "Dining", material: "Smoked Mahogany", img: pieceDining, dim: "240 × 100 × 75 cm" },
-  { name: "Eko Sideboard", category: "Storage", material: "Walnut & Brass", img: pieceSideboard, dim: "180 × 50 × 80 cm" },
-  { name: "Zaria Lounge Chair", category: "Lounge", material: "Hand-planed Iroko", img: pieceArmchair, dim: "82 × 88 × 78 cm" },
-  { name: "Ikoyi Patio Chair", category: "Outdoor", material: "Iroko & Cane", img: heroChair, dim: "70 × 95 × 88 cm" },
-  { name: "Atelier Moodboard", category: "Accents", material: "Mixed Materials", img: craftMood, dim: "Custom" },
-  { name: "Itan Credenza", category: "Storage", material: "Walnut & Brass", img: pieceSideboard, dim: "200 × 50 × 85 cm" },
+  { name: "Bouclé Sectional Lounge", category: "Lounge", material: "Cream Bouclé · Hardwood Frame", img: gallery1, dim: "Custom configurations" },
+  { name: "Cloud Curve Sofa", category: "Lounge", material: "Charcoal Linen · Sculpted Form", img: gallery2, dim: "260 × 100 × 85 cm" },
+  { name: "Signature Line Set", category: "Living Sets", material: "Hand-printed Bouclé", img: gallery3, dim: "Set of 3 · Custom" },
+  { name: "Velvet Sculptural Suite", category: "Lounge", material: "Mocha Velvet · Plinth Base", img: gallery4, dim: "Modular suite" },
+  { name: "Monochrome Living Set", category: "Living Sets", material: "Cream Linen · Piped Detail", img: gallery5, dim: "3+2+1 seater" },
 ];
 
-const categories = ["All", "Dining", "Lounge", "Storage", "Outdoor", "Accents"];
+const categories = ["All", "Lounge", "Living Sets", "Dining", "Bedroom", "Bespoke"];
 
 function CollectionsPage() {
   return (
