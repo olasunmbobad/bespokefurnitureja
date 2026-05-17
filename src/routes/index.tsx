@@ -6,6 +6,7 @@ import pieceDining from "@/assets/piece-dining.jpg";
 import pieceSideboard from "@/assets/piece-sideboard.jpg";
 import pieceArmchair from "@/assets/piece-armchair.jpg";
 import craftHands from "@/assets/craft-hands.jpg";
+import ceoPortrait from "@/assets/ceo-portrait.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -22,7 +23,7 @@ export const Route = createFileRoute("/")({
 const featured = [
   { name: "Omo Dining", material: "Smoked Mahogany", img: pieceDining, no: "01" },
   { name: "Eko Sideboard", material: "Walnut & Brass", img: pieceSideboard, no: "02" },
-  { name: "Zaria Lounge", material: "Hand-planed Iroko", img: pieceArmchair, no: "03" },
+  { name: "Zaria TV Console", material: "Hand-planed Iroko", img: pieceArmchair, no: "03" },
 ];
 
 function HomePage() {
@@ -51,9 +52,6 @@ function HomePage() {
               height={1280}
               className="w-full aspect-[4/5] object-contain rounded-sm bg-paper"
             />
-            <p className="mt-3 font-mono text-[10px] uppercase tracking-widest text-forest/40">
-              The Ikoyi Collection · Vol. 04
-            </p>
           </div>
         </div>
       </section>
@@ -106,8 +104,8 @@ function HomePage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
           <div className="lg:col-span-5">
             <img
-              src={craftHands}
-              alt="A craftsman planing iroko timber by hand"
+              src={ceoPortrait}
+              alt="Badmus Soliu Olasubomi — Founder & CEO of BespokeFurniture9ja"
               loading="lazy"
               width={1024}
               height={1280}
