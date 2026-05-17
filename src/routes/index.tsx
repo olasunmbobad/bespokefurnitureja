@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
-import heroChair from "@/assets/hero-chair.jpg";
+import heroChair from "@/assets/brand-logo.png";
 import pieceDining from "@/assets/piece-dining.jpg";
 import pieceSideboard from "@/assets/piece-sideboard.jpg";
 import pieceArmchair from "@/assets/piece-armchair.jpg";
@@ -46,10 +46,10 @@ function HomePage() {
           <div className="col-span-12 lg:col-span-5 animate-scale-reveal">
             <img
               src={heroChair}
-              alt="Hand-carved iroko lounge chair in a sunlit Lagos courtyard"
+              alt="BespokeFurniture9ja brand logo"
               width={1024}
               height={1280}
-              className="w-full aspect-[4/5] object-cover rounded-sm"
+              className="w-full aspect-[4/5] object-contain rounded-sm bg-paper"
             />
             <p className="mt-3 font-mono text-[10px] uppercase tracking-widest text-forest/40">
               The Ikoyi Collection · Vol. 04
