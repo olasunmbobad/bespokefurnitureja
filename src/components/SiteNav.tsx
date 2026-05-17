@@ -11,7 +11,7 @@ export function SiteNav() {
   return (
     <nav className="sticky top-0 z-50 flex items-center justify-between px-6 md:px-10 py-5 bg-paper/80 backdrop-blur-md border-b border-forest/5">
       <Link to="/" className="font-display text-xl md:text-2xl tracking-tight uppercase text-forest">
-        Bespoke<span className="text-sage">9ja</span>
+        Bespoke<span className="text-sage">Furniture9ja</span>
       </Link>
       <div className="hidden md:flex gap-10 text-[11px] font-medium uppercase tracking-[0.2em] text-forest/70">
         <Link to="/collections" className="hover:text-forest transition-colors" activeProps={{ className: "text-forest" }}>Collections</Link>
