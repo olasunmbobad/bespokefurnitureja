@@ -41,7 +41,7 @@ function CollectionsPage() {
             Pieces, by category.
           </h1>
           <p className="mt-8 max-w-xl text-forest/70 leading-relaxed">
-            Each work is built to order in our Lagos studio. Lead times typically range from six to twelve weeks.
+            Each work is built to order in our Lagos studio. Lead times typically range from two to six weeks max.
           </p>
 
           <div className="mt-12 flex flex-wrap gap-3">
