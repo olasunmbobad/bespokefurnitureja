@@ -20,14 +20,14 @@ export const Route = createFileRoute("/collections")({
 });
 
 const pieces = [
-  { name: "Bouclé Sectional Lounge", category: "Lounge", material: "Cream Bouclé · Hardwood Frame", img: gallery1, dim: "Custom configurations" },
-  { name: "Cloud Curve Sofa", category: "Lounge", material: "Charcoal Linen · Sculpted Form", img: gallery2, dim: "260 × 100 × 85 cm" },
+  { name: "Bouclé Sectional TV Console", category: "TV Console", material: "Cream Bouclé · Hardwood Frame", img: gallery1, dim: "Custom configurations" },
+  { name: "Cloud Curve Sofa", category: "TV Console", material: "Charcoal Linen · Sculpted Form", img: gallery2, dim: "260 × 100 × 85 cm" },
   { name: "Signature Line Set", category: "Living Sets", material: "Hand-printed Bouclé", img: gallery3, dim: "Set of 3 · Custom" },
-  { name: "Velvet Sculptural Suite", category: "Lounge", material: "Mocha Velvet · Plinth Base", img: gallery4, dim: "Modular suite" },
+  { name: "Velvet Sculptural Suite", category: "TV Console", material: "Mocha Velvet · Plinth Base", img: gallery4, dim: "Modular suite" },
   { name: "Monochrome Living Set", category: "Living Sets", material: "Cream Linen · Piped Detail", img: gallery5, dim: "3+2+1 seater" },
 ];
 
-const categories = ["All", "Lounge", "Living Sets", "Dining", "Bedroom", "Bespoke"];
+const categories = ["All", "TV Console", "Living Sets", "Dining", "Bedroom", "Bespoke"];
 
 function CollectionsPage() {
   return (
