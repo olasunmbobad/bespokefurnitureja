@@ -21,9 +21,9 @@ export const Route = createFileRoute("/")({
 });
 
 const featured = [
-  { name: "Omo Dining", material: "Smoked Mahogany", img: pieceDining, no: "01" },
-  { name: "Eko Sideboard", material: "Walnut & Brass", img: pieceSideboard, no: "02" },
-  { name: "Zaria TV Console", material: "Hand-planed Iroko", img: pieceArmchair, no: "03" },
+  { name: "Sofa Set", material: "Cream Bouclé · Hardwood Frame", img: pieceDining, no: "01" },
+  { name: "TV Console", material: "Hand-planed Iroko", img: pieceSideboard, no: "02" },
+  { name: "Dining Set", material: "Smoked Mahogany", img: pieceArmchair, no: "03" },
 ];
 
 function HomePage() {
