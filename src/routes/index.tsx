@@ -21,9 +21,9 @@ export const Route = createFileRoute("/")({
 });
 
 const featured = [
-  { name: "Omo Dining", material: "Smoked Mahogany", img: pieceDining, no: "01" },
-  { name: "Eko Sideboard", material: "Walnut & Brass", img: pieceSideboard, no: "02" },
-  { name: "Zaria TV Console", material: "Hand-planed Iroko", img: pieceArmchair, no: "03" },
+  { name: "Sofa Set", material: "Cream Bouclé · Hardwood Frame", img: pieceDining, no: "01" },
+  { name: "TV Console", material: "Hand-planed Iroko", img: pieceSideboard, no: "02" },
+  { name: "Dining Set", material: "Smoked Mahogany", img: pieceArmchair, no: "03" },
 ];
 
 function HomePage() {
@@ -60,7 +60,7 @@ function HomePage() {
       <section className="bg-forest text-paper py-24 md:py-32 px-6 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-end mb-16 md:mb-20">
-            <h2 className="font-display text-4xl md:text-5xl">Best Sellers</h2>
+            <h2 className="font-display text-4xl md:text-5xl">Bestselling Designs</h2>
             <span className="font-mono text-[10px] uppercase tracking-widest opacity-60">Vol. 04 / 2024</span>
           </div>
 
