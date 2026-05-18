@@ -56,11 +56,11 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Current Works */}
+      {/* Best Sellers */}
       <section className="bg-forest text-paper py-24 md:py-32 px-6 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-end mb-16 md:mb-20">
-            <h2 className="font-display text-4xl md:text-5xl">Current Works</h2>
+            <h2 className="font-display text-4xl md:text-5xl">Best Sellers</h2>
             <span className="font-mono text-[10px] uppercase tracking-widest opacity-60">Vol. 04 / 2024</span>
           </div>
 
