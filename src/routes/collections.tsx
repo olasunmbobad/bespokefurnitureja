@@ -12,7 +12,6 @@ import dining3 from "@/assets/dining-3.png";
 import dining4 from "@/assets/dining-4.png";
 import dining5 from "@/assets/dining-5.png";
 import dining6 from "@/assets/dining-6.png";
-import dining7 from "@/assets/dining-7.png";
 import dining8 from "@/assets/dining-8.png";
 
 export const Route = createFileRoute("/collections")({
@@ -39,7 +38,6 @@ const pieces = [
   { name: "Walnut Heritage Dining", category: "Dining", material: "Solid Walnut · Woven Linen", img: dining4, dim: "Seats 6 · 220 × 100 cm" },
   { name: "Calacatta Console Dining", category: "Dining", material: "Calacatta Top · Walnut Frame", img: dining5, dim: "Seats 6 · 200 × 95 cm" },
   { name: "Cane-Back Dining Set", category: "Dining", material: "Marble Top · Rattan Detail", img: dining6, dim: "Seats 6 · 180 × 95 cm" },
-  { name: "Espresso Bouclé Chairs", category: "Dining", material: "Cocoa Bouclé · Ebony Frame", img: dining7, dim: "Set of 6 chairs" },
   { name: "Fluted Pedestal Dining", category: "Dining", material: "Marble Oval · Fluted Base", img: dining8, dim: "Seats 6 · 200 × 100 cm" },
 ];
 
