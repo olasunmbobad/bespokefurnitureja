@@ -6,6 +6,14 @@ import gallery2 from "@/assets/gallery-2.png";
 import gallery3 from "@/assets/gallery-3.png";
 import gallery4 from "@/assets/gallery-4.png";
 import gallery5 from "@/assets/gallery-5.png";
+import dining1 from "@/assets/dining-1.png";
+import dining2 from "@/assets/dining-2.png";
+import dining3 from "@/assets/dining-3.png";
+import dining4 from "@/assets/dining-4.png";
+import dining5 from "@/assets/dining-5.png";
+import dining6 from "@/assets/dining-6.png";
+import dining7 from "@/assets/dining-7.png";
+import dining8 from "@/assets/dining-8.png";
 
 export const Route = createFileRoute("/collections")({
   head: () => ({
@@ -25,6 +33,14 @@ const pieces = [
   { name: "Signature Line Set", category: "Living Sets", material: "Hand-printed Bouclé", img: gallery3, dim: "Set of 3 · Custom" },
   { name: "Velvet Sculptural Suite", category: "TV Console", material: "Mocha Velvet · Plinth Base", img: gallery4, dim: "Modular suite" },
   { name: "Monochrome Living Set", category: "Living Sets", material: "Cream Linen · Piped Detail", img: gallery5, dim: "3+2+1 seater" },
+  { name: "Onyx Marble Dining Table", category: "Dining", material: "Walnut Base · Bouclé Armchairs", img: dining1, dim: "Seats 8 · 240 × 110 cm" },
+  { name: "Arched Oval Dining Set", category: "Dining", material: "Pearl Marble · Sculpted Bouclé", img: dining2, dim: "Seats 6 · 220 × 100 cm" },
+  { name: "Carrara Curve Dining", category: "Dining", material: "Carrara Marble · Grey Bouclé", img: dining3, dim: "Seats 6 · 200 × 100 cm" },
+  { name: "Walnut Heritage Dining", category: "Dining", material: "Solid Walnut · Woven Linen", img: dining4, dim: "Seats 6 · 220 × 100 cm" },
+  { name: "Calacatta Console Dining", category: "Dining", material: "Calacatta Top · Walnut Frame", img: dining5, dim: "Seats 6 · 200 × 95 cm" },
+  { name: "Cane-Back Dining Set", category: "Dining", material: "Marble Top · Rattan Detail", img: dining6, dim: "Seats 6 · 180 × 95 cm" },
+  { name: "Espresso Bouclé Chairs", category: "Dining", material: "Cocoa Bouclé · Ebony Frame", img: dining7, dim: "Set of 6 chairs" },
+  { name: "Fluted Pedestal Dining", category: "Dining", material: "Marble Oval · Fluted Base", img: dining8, dim: "Seats 6 · 200 × 100 cm" },
 ];
 
 const categories = ["All", "TV Console", "Living Sets", "Dining", "Bedroom", "Bespoke"];
