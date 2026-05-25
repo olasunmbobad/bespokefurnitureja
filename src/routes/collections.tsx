@@ -27,11 +27,11 @@ export const Route = createFileRoute("/collections")({
 });
 
 const pieces = [
-  { name: "Bouclé Sectional TV Console", category: "TV Console", material: "Cream Bouclé · Hardwood Frame", img: gallery1, dim: "Custom configurations" },
-  { name: "Cloud Curve Sofa", category: "TV Console", material: "Charcoal Linen · Sculpted Form", img: gallery2, dim: "260 × 100 × 85 cm" },
-  { name: "Signature Line Set", category: "Living Sets", material: "Hand-printed Bouclé", img: gallery3, dim: "Set of 3 · Custom" },
-  { name: "Velvet Sculptural Suite", category: "TV Console", material: "Mocha Velvet · Plinth Base", img: gallery4, dim: "Modular suite" },
-  { name: "Monochrome Living Set", category: "Living Sets", material: "Cream Linen · Piped Detail", img: gallery5, dim: "3+2+1 seater" },
+  { name: "Bouclé Sectional Sofa", category: "Sofa", material: "Cream Bouclé · Hardwood Frame", img: gallery1, dim: "Custom configurations" },
+  { name: "Cloud Curve Sofa", category: "Sofa", material: "Charcoal Linen · Sculpted Form", img: gallery2, dim: "260 × 100 × 85 cm" },
+  { name: "Signature Line Sofa Set", category: "Sofa", material: "Hand-printed Bouclé", img: gallery3, dim: "Set of 3 · Custom" },
+  { name: "Velvet Sculptural Suite", category: "Sofa", material: "Mocha Velvet · Plinth Base", img: gallery4, dim: "Modular suite" },
+  { name: "Monochrome Living Set", category: "Sofa", material: "Cream Linen · Piped Detail", img: gallery5, dim: "3+2+1 seater" },
   { name: "Onyx Marble Dining Table", category: "Dining", material: "Walnut Base · Bouclé Armchairs", img: dining1, dim: "Seats 8 · 240 × 110 cm" },
   { name: "Arched Oval Dining Set", category: "Dining", material: "Pearl Marble · Sculpted Bouclé", img: dining2, dim: "Seats 6 · 220 × 100 cm" },
   { name: "Carrara Curve Dining", category: "Dining", material: "Carrara Marble · Grey Bouclé", img: dining3, dim: "Seats 6 · 200 × 100 cm" },
@@ -41,7 +41,7 @@ const pieces = [
   { name: "Fluted Pedestal Dining", category: "Dining", material: "Marble Oval · Fluted Base", img: dining8, dim: "Seats 6 · 200 × 100 cm" },
 ];
 
-const categories = ["All", "TV Console", "Living Sets", "Dining", "Bedroom", "Bespoke"];
+const categories = ["All", "Sofa", "Dining", "TV Console", "Bedroom", "Bespoke"];
 
 function CollectionsPage() {
   return (
