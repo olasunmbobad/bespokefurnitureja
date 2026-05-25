@@ -8,6 +8,7 @@ import pieceArmchair from "@/assets/piece-armchair.jpg";
 import craftHands from "@/assets/craft-hands.jpg";
 import ceoPortrait from "@/assets/ceo-portrait.jpg";
 import sofaSetBestseller from "@/assets/sofa-set-bestseller.jpg";
+import diningSetBestseller from "@/assets/dining-set-bestseller.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
