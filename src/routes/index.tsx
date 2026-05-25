@@ -22,7 +22,7 @@ export const Route = createFileRoute("/")({
 });
 
 const featured = [
-  { name: "Sofa Set", material: "Cream Bouclé · Hardwood Frame", img: pieceDining, no: "01" },
+  { name: "Sofa Set", material: "Cream Bouclé · Hardwood Frame", img: sofaSetBestseller, no: "01" },
   { name: "TV Console", material: "Hand-planed Iroko", img: pieceSideboard, no: "02" },
   { name: "Dining Set", material: "Smoked Mahogany", img: pieceArmchair, no: "03" },
 ];
