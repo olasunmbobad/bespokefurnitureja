@@ -84,7 +84,7 @@ function CollectionsPage() {
 
       <section className="px-6 md:px-10 pb-24 md:pb-32">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-          {pieces.map((p, i) => (
+          {filteredPieces.map((p, i) => (
             <article key={p.name + i} className="group">
               <div className="aspect-[3/4] overflow-hidden rounded-sm bg-moss/5 mb-6">
                 <img
@@ -106,6 +106,11 @@ function CollectionsPage() {
               </div>
             </article>
           ))}
+          {filteredPieces.length === 0 && (
+            <p className="col-span-full text-center text-forest/60 py-16">
+              No pieces in this category yet. Upload images and we'll add them here.
+            </p>
+          )}
         </div>
       </section>
 
