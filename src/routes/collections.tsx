@@ -45,6 +45,8 @@ const pieces = [
 const categories = ["All", "Sofa", "Dining", "TV Console", "Bedroom", "Bespoke"];
 
 function CollectionsPage() {
+  const [activeCategory, setActiveCategory] = useState("All");
+  const filteredPieces = activeCategory === "All" ? pieces : pieces.filter((p) => p.category === activeCategory);
   return (
     <div className="bg-paper text-forest min-h-screen">
       <SiteNav />
