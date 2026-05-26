@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import gallery1 from "@/assets/gallery-1.png";
@@ -44,6 +45,8 @@ const pieces = [
 const categories = ["All", "Sofa", "Dining", "TV Console", "Bedroom", "Bespoke"];
 
 function CollectionsPage() {
+  const [activeCategory, setActiveCategory] = useState("All");
+  const filteredPieces = activeCategory === "All" ? pieces : pieces.filter((p) => p.category === activeCategory);
   return (
     <div className="bg-paper text-forest min-h-screen">
       <SiteNav />
@@ -59,21 +62,29 @@ function CollectionsPage() {
           </p>
 
           <div className="mt-12 flex flex-wrap gap-3">
-            {categories.map((c) => (
-              <button
-                key={c}
-                className="px-4 py-2 rounded-full border border-forest/15 text-[11px] uppercase tracking-widest text-forest/70 hover:bg-forest hover:text-paper hover:border-forest transition-colors"
-              >
-                {c}
-              </button>
-            ))}
+            {categories.map((c) => {
+              const isActive = c === activeCategory;
+              return (
+                <button
+                  key={c}
+                  onClick={() => setActiveCategory(c)}
+                  className={`px-4 py-2 rounded-full border text-[11px] uppercase tracking-widest transition-colors ${
+                    isActive
+                      ? "bg-forest text-paper border-forest"
+                      : "border-forest/15 text-forest/70 hover:bg-forest hover:text-paper hover:border-forest"
+                  }`}
+                >
+                  {c}
+                </button>
+              );
+            })}
           </div>
         </div>
       </header>
 
       <section className="px-6 md:px-10 pb-24 md:pb-32">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-          {pieces.map((p, i) => (
+          {filteredPieces.map((p, i) => (
             <article key={p.name + i} className="group">
               <div className="aspect-[3/4] overflow-hidden rounded-sm bg-moss/5 mb-6">
                 <img
@@ -95,6 +106,11 @@ function CollectionsPage() {
               </div>
             </article>
           ))}
+          {filteredPieces.length === 0 && (
+            <p className="col-span-full text-center text-forest/60 py-16">
+              No pieces in this category yet. Upload images and we'll add them here.
+            </p>
+          )}
         </div>
       </section>
 
