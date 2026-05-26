@@ -62,14 +62,22 @@ function CollectionsPage() {
           </p>
 
           <div className="mt-12 flex flex-wrap gap-3">
-            {categories.map((c) => (
-              <button
-                key={c}
-                className="px-4 py-2 rounded-full border border-forest/15 text-[11px] uppercase tracking-widest text-forest/70 hover:bg-forest hover:text-paper hover:border-forest transition-colors"
-              >
-                {c}
-              </button>
-            ))}
+            {categories.map((c) => {
+              const isActive = c === activeCategory;
+              return (
+                <button
+                  key={c}
+                  onClick={() => setActiveCategory(c)}
+                  className={`px-4 py-2 rounded-full border text-[11px] uppercase tracking-widest transition-colors ${
+                    isActive
+                      ? "bg-forest text-paper border-forest"
+                      : "border-forest/15 text-forest/70 hover:bg-forest hover:text-paper hover:border-forest"
+                  }`}
+                >
+                  {c}
+                </button>
+              );
+            })}
           </div>
         </div>
       </header>
