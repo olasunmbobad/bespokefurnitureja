@@ -14,6 +14,16 @@ import dining4 from "@/assets/dining-4.png";
 import dining5 from "@/assets/dining-5.png";
 import dining6 from "@/assets/dining-6.png";
 import dining8 from "@/assets/dining-8.png";
+import bedroomEmeraldSuite from "@/assets/bedroom-emerald-suite.png.asset.json";
+import bedroomMinimalPanelSuite from "@/assets/bedroom-minimal-panel-suite.png.asset.json";
+import bedroomLuxeDarkPanelSuite from "@/assets/bedroom-luxe-dark-panel-suite.png.asset.json";
+import sofaIvoryCurvedLoungeSet from "@/assets/sofa-ivory-curved-lounge-set.png.asset.json";
+import tvConsoleBookmatchedFireplaceWall from "@/assets/tv-console-bookmatched-fireplace-wall.png.asset.json";
+import tvConsoleDisplayFeatureWall from "@/assets/tv-console-display-feature-wall.png.asset.json";
+import tvConsoleFlutedOakWall from "@/assets/tv-console-fluted-oak-wall.png.asset.json";
+import tvConsoleMarbleTopOval from "@/assets/tv-console-marble-top-oval.png.asset.json";
+import tvConsoleRoundedOakCredenza from "@/assets/tv-console-rounded-oak-credenza.png.asset.json";
+import tvConsoleStoneFireplaceWall from "@/assets/tv-console-stone-fireplace-wall.png.asset.json";
 
 export const Route = createFileRoute("/collections")({
   head: () => ({
@@ -33,6 +43,7 @@ const pieces = [
   { name: "Signature Line Sofa Set", category: "Sofa", material: "Hand-printed Bouclé", img: gallery3, dim: "Set of 3 · Custom" },
   { name: "Velvet Sculptural Suite", category: "Sofa", material: "Mocha Velvet · Plinth Base", img: gallery4, dim: "Modular suite" },
   { name: "Monochrome Living Set", category: "Sofa", material: "Cream Linen · Piped Detail", img: gallery5, dim: "3+2+1 seater" },
+  { name: "Ivory Curved Lounge Set", category: "Sofa", material: "Textured Ivory Upholstery · Sculpted Accent Chairs", img: sofaIvoryCurvedLoungeSet.url, dim: "3 seater + 2 lounge chairs" },
   { name: "Onyx Marble Dining Table", category: "Dining", material: "Walnut Base · Bouclé Armchairs", img: dining1, dim: "Seats 8 · 240 × 110 cm" },
   { name: "Arched Oval Dining Set", category: "Dining", material: "Pearl Marble · Sculpted Bouclé", img: dining2, dim: "Seats 6 · 220 × 100 cm" },
   { name: "Carrara Curve Dining", category: "Dining", material: "Carrara Marble · Grey Bouclé", img: dining3, dim: "Seats 6 · 200 × 100 cm" },
@@ -40,6 +51,15 @@ const pieces = [
   { name: "Calacatta Console Dining", category: "Dining", material: "Calacatta Top · Walnut Frame", img: dining5, dim: "Seats 6 · 200 × 95 cm" },
   { name: "Cane-Back Dining Set", category: "Dining", material: "Marble Top · Rattan Detail", img: dining6, dim: "Seats 6 · 180 × 95 cm" },
   { name: "Fluted Pedestal Dining", category: "Dining", material: "Marble Oval · Fluted Base", img: dining8, dim: "Seats 6 · 200 × 100 cm" },
+  { name: "Fluted Oak Media Wall", category: "TV Console", material: "Oak Veneer · Ribbed Base Console", img: tvConsoleFlutedOakWall.url, dim: "Wall unit · Custom" },
+  { name: "Stone Fireplace Media Wall", category: "TV Console", material: "Bookmatched Stone · Built-in Fireplace", img: tvConsoleStoneFireplaceWall.url, dim: "Wall unit · Custom" },
+  { name: "Marble Top Oval Console", category: "TV Console", material: "Fluted Base · Marble Top", img: tvConsoleMarbleTopOval.url, dim: "Low console · Custom" },
+  { name: "Rounded Oak Credenza", category: "TV Console", material: "Oak Finish · Soft Radius Ends", img: tvConsoleRoundedOakCredenza.url, dim: "4-door console" },
+  { name: "Bookmatched Fireplace Wall", category: "TV Console", material: "Stone Slab · Glass Display Towers", img: tvConsoleBookmatchedFireplaceWall.url, dim: "Feature wall · Custom" },
+  { name: "Display Feature TV Wall", category: "TV Console", material: "Curved Shelving · Marble Base", img: tvConsoleDisplayFeatureWall.url, dim: "Feature wall · Custom" },
+  { name: "Emerald Panel Bedroom", category: "Bedroom", material: "Upholstered Headboard · Walnut Detail", img: bedroomEmeraldSuite.url, dim: "Full bedroom set" },
+  { name: "Minimal Panel Bedroom", category: "Bedroom", material: "Floating Bed Base · Gloss Wardrobe", img: bedroomMinimalPanelSuite.url, dim: "Bedroom suite" },
+  { name: "Luxe Dark Panel Bedroom", category: "Bedroom", material: "Integrated Lighting · Wood Panel Finish", img: bedroomLuxeDarkPanelSuite.url, dim: "Full bedroom set" },
 ];
 
 const categories = ["All", "Sofa", "Dining", "TV Console", "Bedroom", "Bespoke"];
