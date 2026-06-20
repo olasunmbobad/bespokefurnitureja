@@ -81,14 +81,14 @@ function CollectionsPage() {
             Each work is built to order in our Lagos studio. Lead times typically range from two to six weeks max.
           </p>
 
-          <div className="mt-12 flex flex-wrap gap-3">
+          <div className="mt-12 flex overflow-x-auto md:flex-wrap gap-3 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden pb-2">
             {categories.map((c) => {
               const isActive = c === activeCategory;
               return (
                 <button
                   key={c}
                   onClick={() => setActiveCategory(c)}
-                  className={`px-4 py-2 rounded-full border text-[11px] uppercase tracking-widest transition-colors ${
+                  className={`shrink-0 px-4 py-2 rounded-full border text-[11px] uppercase tracking-widest transition-colors ${
                     isActive
                       ? "bg-forest text-paper border-forest"
                       : "border-forest/15 text-forest/70 hover:bg-forest hover:text-paper hover:border-forest"
