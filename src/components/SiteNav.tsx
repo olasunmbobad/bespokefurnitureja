@@ -1,12 +1,5 @@
 import { Link } from "@tanstack/react-router";
 
-const links = [
-  { to: "/collections" as const, label: "Collections", active: true },
-  { to: "/bespoke" as const, label: "The Process", active: true },
-  { to: "/" as const, label: "Our Story", hash: "story" as const, active: false },
-  { to: "/contact" as const, label: "Contact", active: true },
-] as const;
-
 export function SiteNav() {
   return (
     <nav className="sticky top-0 z-50 bg-paper/80 backdrop-blur-md border-b border-forest/5">
@@ -28,17 +21,10 @@ export function SiteNav() {
         </Link>
       </div>
       <div className="flex md:hidden overflow-x-auto gap-6 px-6 pb-3 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        {links.map((link) => (
-          <Link
-            key={link.to + (link.hash || "")}
-            to={link.to}
-            hash={link.hash}
-            className="shrink-0 text-[11px] font-medium uppercase tracking-[0.2em] text-forest/70 hover:text-forest transition-colors"
-            activeProps={link.active ? { className: "text-forest" } : undefined}
-          >
-            {link.label}
-          </Link>
-        ))}
+        <Link to="/collections" className="shrink-0 text-[11px] font-medium uppercase tracking-[0.2em] text-forest/70 hover:text-forest transition-colors" activeProps={{ className: "text-forest" }}>Collections</Link>
+        <Link to="/bespoke" className="shrink-0 text-[11px] font-medium uppercase tracking-[0.2em] text-forest/70 hover:text-forest transition-colors" activeProps={{ className: "text-forest" }}>The Process</Link>
+        <Link to="/" hash="story" className="shrink-0 text-[11px] font-medium uppercase tracking-[0.2em] text-forest/70 hover:text-forest transition-colors">Our Story</Link>
+        <Link to="/contact" className="shrink-0 text-[11px] font-medium uppercase tracking-[0.2em] text-forest/70 hover:text-forest transition-colors" activeProps={{ className: "text-forest" }}>Contact</Link>
       </div>
     </nav>
   );
