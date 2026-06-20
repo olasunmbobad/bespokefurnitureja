@@ -1,10 +1,10 @@
 import { Link } from "@tanstack/react-router";
 
 const links = [
-  { to: "/collections", label: "Collections", active: true },
-  { to: "/bespoke", label: "The Process", active: true },
-  { to: "/", label: "Our Story", hash: "story" as const, active: false },
-  { to: "/contact", label: "Contact", active: true },
+  { to: "/collections" as const, label: "Collections", active: true },
+  { to: "/bespoke" as const, label: "The Process", active: true },
+  { to: "/" as const, label: "Our Story", hash: "story" as const, active: false },
+  { to: "/contact" as const, label: "Contact", active: true },
 ] as const;
 
 export function SiteNav() {
