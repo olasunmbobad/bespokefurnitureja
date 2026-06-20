@@ -117,11 +117,7 @@ function CollectionsPage() {
                 />
               </div>
               <div className="flex items-start justify-between gap-4">
-                <div>
-                  <p className="font-mono text-[9px] uppercase tracking-[0.25em] text-sage mb-2">{p.category}</p>
-                  <h3 className="font-display text-2xl mb-1">{p.name}</h3>
-                  <p className="text-sm text-forest/60">{p.material}</p>
-                </div>
+                <h3 className="font-display text-2xl">{p.name}</h3>
                 <span className="font-mono text-[10px] text-forest/50 whitespace-nowrap">{p.dim}</span>
               </div>
             </article>
