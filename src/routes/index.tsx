@@ -34,6 +34,10 @@ function HomePage() {
     <div className="bg-paper text-forest">
       <SiteNav />
 
+      <HeroCarousel />
+
+
+
       {/* Hero */}
       <section className="relative px-6 md:px-10 pt-12 md:pt-20 pb-24 md:pb-32">
         <div className="max-w-7xl mx-auto grid grid-cols-12 gap-6 md:gap-8 items-end">
