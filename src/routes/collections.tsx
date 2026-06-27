@@ -69,6 +69,7 @@ const categories = ["All", "Sofa", "Dining", "TV Console", "Bedroom", "Bespoke"]
 
 function CollectionsPage() {
   const search = useSearch({ from: "/collections" });
+  const navigate = useNavigate({ from: "/collections" });
   const initialCategory = categories.includes(search.category ?? "") ? search.category : "All";
   const [activeCategory, setActiveCategory] = useState(initialCategory ?? "All");
 
@@ -77,6 +78,14 @@ function CollectionsPage() {
       setActiveCategory(search.category);
     }
   }, [search.category]);
+
+  const selectCategory = (c: string) => {
+    setActiveCategory(c);
+    navigate({
+      search: (prev) => ({ ...prev, category: c === "All" ? undefined : c }),
+      replace: true,
+    });
+  };
 
   const filteredPieces = activeCategory === "All" ? pieces : pieces.filter((p) => p.category === activeCategory);
   return (
