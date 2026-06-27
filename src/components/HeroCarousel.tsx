@@ -74,7 +74,7 @@ export function HeroCarousel() {
 
         {/* Crafted Slowly overlay */}
         <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center p-6">
-          <div className="text-center px-8 py-10 md:px-16 md:py-14 bg-forest/60 border border-paper/15 rounded-sm shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] max-w-4xl">
+          <div className="text-center px-8 py-10 md:px-16 md:py-14 bg-forest/30 border border-paper/15 rounded-sm shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] max-w-4xl">
             <p className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-sage mb-3 md:mb-4 drop-shadow">
               Lagos · Est. by hand
             </p>
