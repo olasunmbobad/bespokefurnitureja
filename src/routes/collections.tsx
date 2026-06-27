@@ -1,5 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { createFileRoute, useSearch, useNavigate } from "@tanstack/react-router";
+import { useState, useEffect } from "react";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import gallery1 from "@/assets/gallery-1.png";
@@ -26,6 +26,9 @@ import tvConsoleRoundedOakCredenza from "@/assets/tv-console-rounded-oak-credenz
 import tvConsoleStoneFireplaceWall from "@/assets/tv-console-stone-fireplace-wall.png.asset.json";
 
 export const Route = createFileRoute("/collections")({
+  validateSearch: (search: Record<string, unknown>) => ({
+    category: typeof search.category === "string" ? search.category : undefined,
+  }),
   head: () => ({
     meta: [
       { title: "Collections — BESPOKEFURNITURE9ja" },
@@ -65,7 +68,25 @@ const pieces = [
 const categories = ["All", "Sofa", "Dining", "TV Console", "Bedroom", "Bespoke"];
 
 function CollectionsPage() {
-  const [activeCategory, setActiveCategory] = useState("All");
+  const search = useSearch({ from: "/collections" });
+  const navigate = useNavigate({ from: "/collections" });
+  const initialCategory = categories.includes(search.category ?? "") ? search.category : "All";
+  const [activeCategory, setActiveCategory] = useState(initialCategory ?? "All");
+
+  useEffect(() => {
+    if (search.category && categories.includes(search.category)) {
+      setActiveCategory(search.category);
+    }
+  }, [search.category]);
+
+  const selectCategory = (c: string) => {
+    setActiveCategory(c);
+    navigate({
+      search: { category: c === "All" ? undefined : c },
+      replace: true,
+    });
+  };
+
   const filteredPieces = activeCategory === "All" ? pieces : pieces.filter((p) => p.category === activeCategory);
   return (
     <div className="bg-paper text-forest min-h-screen">
@@ -87,7 +108,7 @@ function CollectionsPage() {
               return (
                 <button
                   key={c}
-                  onClick={() => setActiveCategory(c)}
+                  onClick={() => selectCategory(c)}
                   className={`shrink-0 px-4 py-2 rounded-full border text-[11px] uppercase tracking-widest transition-colors ${
                     isActive
                       ? "bg-forest text-paper border-forest"
