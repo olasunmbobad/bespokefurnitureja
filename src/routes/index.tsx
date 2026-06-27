@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { HeroCarousel } from "@/components/HeroCarousel";
+import { CategoryShowcase } from "@/components/CategoryShowcase";
 import heroChair from "@/assets/brand-logo.png";
 import pieceDining from "@/assets/piece-dining.jpg";
 import pieceSideboard from "@/assets/piece-sideboard.jpg";
