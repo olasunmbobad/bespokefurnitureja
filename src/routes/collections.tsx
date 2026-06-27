@@ -1,4 +1,4 @@
-import { createFileRoute, useSearch, Link } from "@tanstack/react-router";
+import { createFileRoute, useSearch, useNavigate } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
