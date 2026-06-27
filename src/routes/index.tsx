@@ -37,7 +37,7 @@ function HomePage() {
 
       <HeroCarousel />
 
-
+      <CategoryShowcase />
 
       {/* Hero */}
       <section className="relative px-6 md:px-10 pt-12 md:pt-20 pb-24 md:pb-32">
