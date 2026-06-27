@@ -26,6 +26,9 @@ import tvConsoleRoundedOakCredenza from "@/assets/tv-console-rounded-oak-credenz
 import tvConsoleStoneFireplaceWall from "@/assets/tv-console-stone-fireplace-wall.png.asset.json";
 
 export const Route = createFileRoute("/collections")({
+  validateSearch: (search: Record<string, unknown>) => ({
+    category: typeof search.category === "string" ? search.category : undefined,
+  }),
   head: () => ({
     meta: [
       { title: "Collections — BESPOKEFURNITURE9ja" },
