@@ -108,7 +108,7 @@ function CollectionsPage() {
               return (
                 <button
                   key={c}
-                  onClick={() => setActiveCategory(c)}
+                  onClick={() => selectCategory(c)}
                   className={`shrink-0 px-4 py-2 rounded-full border text-[11px] uppercase tracking-widest transition-colors ${
                     isActive
                       ? "bg-forest text-paper border-forest"
