@@ -73,12 +73,12 @@ export function HeroCarousel() {
         ))}
 
         {/* Crafted Slowly overlay */}
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-20 flex items-start justify-center pt-10 md:pt-16">
-          <div className="text-center px-6">
-            <p className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-sage mb-3 drop-shadow">
+        <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center p-6">
+          <div className="text-center px-8 py-10 md:px-16 md:py-14 bg-forest/60 border border-paper/15 rounded-sm shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] max-w-4xl">
+            <p className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-sage mb-3 md:mb-4 drop-shadow">
               Lagos · Est. by hand
             </p>
-            <h2 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.85] text-paper drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)]">
+            <h2 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-[9rem] xl:text-[10rem] leading-[0.85] text-paper drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)]">
               Crafted <span className="italic text-sage">Slowly</span>
             </h2>
           </div>
