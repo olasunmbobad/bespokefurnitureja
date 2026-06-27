@@ -82,7 +82,7 @@ function CollectionsPage() {
   const selectCategory = (c: string) => {
     setActiveCategory(c);
     navigate({
-      search: (prev) => ({ ...prev, category: c === "All" ? undefined : c }),
+      search: { category: c === "All" ? undefined : c },
       replace: true,
     });
   };
