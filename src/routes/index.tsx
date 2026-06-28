@@ -5,13 +5,10 @@ import { HeroCarousel } from "@/components/HeroCarousel";
 import { CategoryShowcase } from "@/components/CategoryShowcase";
 import { CollectionsShowcase } from "@/components/CollectionsShowcase";
 import heroChair from "@/assets/brand-logo.png";
-import pieceDining from "@/assets/piece-dining.jpg";
-import pieceSideboard from "@/assets/piece-sideboard.jpg";
-import pieceArmchair from "@/assets/piece-armchair.jpg";
-import craftHands from "@/assets/craft-hands.jpg";
 import ceoPortrait from "@/assets/ceo-portrait.jpg";
 import sofaSetBestseller from "@/assets/sofa-set-bestseller.jpg";
 import diningSetBestseller from "@/assets/dining-set-bestseller.jpg";
+import pieceSideboard from "@/assets/piece-sideboard.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
