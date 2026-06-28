@@ -65,6 +65,8 @@ function HomePage() {
         </div>
       </section>
 
+      <CollectionsShowcase />
+
       {/* Best Sellers */}
       <section className="bg-forest text-paper py-24 md:py-32 px-6 md:px-10">
         <div className="max-w-7xl mx-auto">
