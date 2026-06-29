@@ -74,13 +74,13 @@ export function HeroCarousel() {
 
         {/* Crafted Slowly overlay */}
         <div className="pointer-events-none absolute inset-x-0 top-0 z-20">
-          <div className="bg-gradient-to-b from-forest/80 via-forest/45 to-transparent px-6 pt-10 pb-20 md:pt-16 md:pb-28">
+          <div className="px-6 pt-10 pb-12 md:pt-16 md:pb-16">
             <div className="text-center max-w-5xl mx-auto">
-              <p className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-sage mb-3 md:mb-4 drop-shadow">
+              <p className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-paper/80 mb-3 md:mb-4">
                 Lagos · Est. by hand
               </p>
-              <h2 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-[9rem] xl:text-[10rem] leading-[0.85] text-paper drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)]">
-                Crafted <span className="italic text-sage">Slowly</span>
+              <h2 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-[9rem] xl:text-[10rem] leading-[0.85] text-paper drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)]">
+                Crafted Slowly
               </h2>
             </div>
           </div>
