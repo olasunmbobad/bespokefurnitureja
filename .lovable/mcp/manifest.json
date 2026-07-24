@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "sdk_version": "0.24.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "bespokefurniture9ja-mcp",
+      "version": "0.1.0",
+      "title": "BespokeFurniture9ja"
+    },
+    "tools": [
+      {
+        "name": "list_collections",
+        "title": "List collections",
+        "description": "List the curated furniture collections offered by BespokeFurniture9ja.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_pieces",
+        "title": "List furniture pieces",
+        "description": "List furniture pieces in the BespokeFurniture9ja catalog. Optionally filter by category.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "category": {
+              "description": "Optional category filter.",
+              "type": "string",
+              "enum": [
+                "Sofa",
+                "Dining",
+                "TV Console",
+                "Bedroom"
+              ]
+            }
+          }
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_studio_info",
+        "title": "Get studio info",
+        "description": "Get contact, showroom, and bespoke commission process information for BespokeFurniture9ja.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
