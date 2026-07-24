@@ -29,7 +29,7 @@ const bookingSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
   email: z.string().trim().email("Enter a valid email").max(255),
   phone: z.string().trim().min(7, "Enter a valid phone").max(30),
-  date: z.date({ required_error: "Pick a date" }),
+  date: z.date({ error: "Pick a date" }),
   time: z.string().min(1, "Pick a time"),
   party: z.string().trim().max(10).optional(),
   notes: z.string().trim().max(500).optional(),
