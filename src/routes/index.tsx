@@ -39,28 +39,18 @@ function HomePage() {
 
       {/* Hero */}
       <section className="relative px-6 md:px-10 pt-12 md:pt-20 pb-24 md:pb-32">
-        <div className="max-w-7xl mx-auto grid grid-cols-12 gap-6 md:gap-8 items-end">
-          <div className="col-span-12 lg:col-span-7 animate-reveal-up">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-forest/60 mb-6">Lagos · Est. by hand</p>
-            <h1 className="font-display text-6xl sm:text-7xl lg:text-[9rem] xl:text-[10rem] leading-[0.85] text-balance mb-10 text-forest">
-              Crafted <br />
-              Slowly in Lagos.
-            </h1>
-            <p className="max-w-md text-base md:text-lg text-forest/80 leading-relaxed font-light">
-              We honor the grain of Nigerian Iroko and Mahogany. Each piece is a quiet conversation between ancient joinery and modern silence.
-            </p>
-          </div>
-          <div className="col-span-12 lg:col-span-5 animate-scale-reveal">
-            <img
-              src={heroChair}
-              alt="BespokeFurniture9ja brand logo"
-              width={1024}
-              height={1280}
-              className="w-full aspect-[4/5] object-contain rounded-sm bg-paper"
-            />
-          </div>
+        <div className="max-w-7xl mx-auto animate-reveal-up">
+          <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-forest/60 mb-6">Lagos · Est. by hand</p>
+          <h1 className="font-display text-6xl sm:text-7xl lg:text-[9rem] xl:text-[10rem] leading-[0.85] text-balance mb-10 text-forest">
+            Crafted <br />
+            Slowly in Lagos.
+          </h1>
+          <p className="max-w-2xl text-xl md:text-2xl lg:text-3xl text-forest/80 leading-relaxed font-light">
+            We honor the grain of Nigerian Iroko and Mahogany. Each piece is a quiet conversation between ancient joinery and modern silence.
+          </p>
         </div>
       </section>
+
 
       <CollectionsShowcase />
 
