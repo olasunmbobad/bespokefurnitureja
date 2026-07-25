@@ -140,9 +140,10 @@ function HomePage() {
           <h2 className="font-display text-4xl md:text-6xl mb-8 text-balance leading-[1]">
             From soil to sanctuary, in three movements.
           </h2>
-          <p className="text-forest/70 max-w-xl mx-auto mb-12 leading-relaxed">
+          <p className="text-lg md:text-xl text-forest/70 max-w-2xl mx-auto mb-12 leading-relaxed">
             A careful sequence — selection, blueprinting, build. We invite you to witness the making.
           </p>
+
           <Link
             to="/bespoke"
             className="inline-flex items-center gap-3 bg-forest text-paper px-7 py-3.5 rounded-full text-[11px] uppercase tracking-widest hover:bg-forest/90 transition-colors"
