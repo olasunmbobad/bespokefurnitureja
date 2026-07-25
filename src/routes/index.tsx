@@ -4,7 +4,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { CategoryShowcase } from "@/components/CategoryShowcase";
 import { CollectionsShowcase } from "@/components/CollectionsShowcase";
-import heroChair from "@/assets/brand-logo.png";
+
 import ceoPortrait from "@/assets/ceo-portrait.jpg";
 import sofaSetBestseller from "@/assets/sofa-set-bestseller.jpg";
 import diningSetBestseller from "@/assets/dining-set-bestseller.jpg";
