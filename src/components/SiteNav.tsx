@@ -7,7 +7,7 @@ export function SiteNav() {
         <Link to="/" className="font-display text-xl md:text-2xl tracking-tight uppercase text-forest">
           Bespoke<span className="text-sage">Furniture9ja</span>
         </Link>
-        <div className="hidden md:flex gap-10 text-[11px] font-medium uppercase tracking-[0.2em] text-forest/70">
+        <div className="hidden md:flex gap-10 text-[18px] font-semibold uppercase tracking-[0.2em] text-forest/70">
           <Link to="/collections" className="hover:text-forest transition-colors" activeProps={{ className: "text-forest" }}>Collections</Link>
           <Link to="/bespoke" className="hover:text-forest transition-colors" activeProps={{ className: "text-forest" }}>The Process</Link>
           <Link to="/" hash="story" className="hover:text-forest transition-colors">Our Story</Link>
