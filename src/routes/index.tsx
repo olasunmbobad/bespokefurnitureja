@@ -115,7 +115,7 @@ function HomePage() {
             <h2 className="font-display text-4xl md:text-6xl leading-[0.95] mb-8 text-balance">
               A Lagos workshop. A patient practice.
             </h2>
-            <div className="space-y-5 text-forest/80 leading-relaxed max-w-xl">
+            <div className="space-y-6 text-lg md:text-xl text-forest/80 leading-relaxed max-w-2xl">
               <p>
                 BespokeFurniture9ja was founded by Badmus Soliu Olasubomi — an award-winning furniture brand built on a single promise: premium quality at an affordable price. Our greenhouse showroom in Yaba has become a Lagos landmark.
               </p>
@@ -123,6 +123,7 @@ function HomePage() {
                 We work with timber sourced from sustainable lots in Nigeria's southern rain belts, selecting each board for grain memory and structural integrity. Every piece is built to order in our factory and delivered nationwide.
               </p>
             </div>
+
             <div className="mt-12 grid grid-cols-3 gap-8 max-w-md">
               <Stat value="89.5K" label="Instagram family" />
               <Stat value="1,700+" label="Pieces shared" />
