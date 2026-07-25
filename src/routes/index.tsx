@@ -4,7 +4,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { CategoryShowcase } from "@/components/CategoryShowcase";
 import { CollectionsShowcase } from "@/components/CollectionsShowcase";
-import heroChair from "@/assets/brand-logo.png";
+
 import ceoPortrait from "@/assets/ceo-portrait.jpg";
 import sofaSetBestseller from "@/assets/sofa-set-bestseller.jpg";
 import diningSetBestseller from "@/assets/dining-set-bestseller.jpg";
@@ -39,28 +39,18 @@ function HomePage() {
 
       {/* Hero */}
       <section className="relative px-6 md:px-10 pt-12 md:pt-20 pb-24 md:pb-32">
-        <div className="max-w-7xl mx-auto grid grid-cols-12 gap-6 md:gap-8 items-end">
-          <div className="col-span-12 lg:col-span-7 animate-reveal-up">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-forest/60 mb-6">Lagos · Est. by hand</p>
-            <h1 className="font-display text-6xl sm:text-7xl lg:text-[9rem] xl:text-[10rem] leading-[0.85] text-balance mb-10 text-forest">
-              Crafted <br />
-              Slowly in Lagos.
-            </h1>
-            <p className="max-w-md text-base md:text-lg text-forest/80 leading-relaxed font-light">
-              We honor the grain of Nigerian Iroko and Mahogany. Each piece is a quiet conversation between ancient joinery and modern silence.
-            </p>
-          </div>
-          <div className="col-span-12 lg:col-span-5 animate-scale-reveal">
-            <img
-              src={heroChair}
-              alt="BespokeFurniture9ja brand logo"
-              width={1024}
-              height={1280}
-              className="w-full aspect-[4/5] object-contain rounded-sm bg-paper"
-            />
-          </div>
+        <div className="max-w-7xl mx-auto animate-reveal-up">
+          <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-forest/60 mb-6">Lagos · Est. by hand</p>
+          <h1 className="font-display text-6xl sm:text-7xl lg:text-[9rem] xl:text-[10rem] leading-[0.85] text-balance mb-10 text-forest">
+            Crafted <br />
+            Slowly in Lagos.
+          </h1>
+          <p className="max-w-2xl text-xl md:text-2xl lg:text-3xl text-forest/80 leading-relaxed font-light">
+            We honor the grain of Nigerian Iroko and Mahogany. Each piece is a quiet conversation between ancient joinery and modern silence.
+          </p>
         </div>
       </section>
+
 
       <CollectionsShowcase />
 
@@ -125,7 +115,7 @@ function HomePage() {
             <h2 className="font-display text-4xl md:text-6xl leading-[0.95] mb-8 text-balance">
               A Lagos workshop. A patient practice.
             </h2>
-            <div className="space-y-5 text-forest/80 leading-relaxed max-w-xl">
+            <div className="space-y-6 text-lg md:text-xl text-forest/80 leading-relaxed max-w-2xl">
               <p>
                 BespokeFurniture9ja was founded by Badmus Soliu Olasubomi — an award-winning furniture brand built on a single promise: premium quality at an affordable price. Our greenhouse showroom in Yaba has become a Lagos landmark.
               </p>
@@ -133,6 +123,7 @@ function HomePage() {
                 We work with timber sourced from sustainable lots in Nigeria's southern rain belts, selecting each board for grain memory and structural integrity. Every piece is built to order in our factory and delivered nationwide.
               </p>
             </div>
+
             <div className="mt-12 grid grid-cols-3 gap-8 max-w-md">
               <Stat value="89.5K" label="Instagram family" />
               <Stat value="1,700+" label="Pieces shared" />
@@ -149,9 +140,10 @@ function HomePage() {
           <h2 className="font-display text-4xl md:text-6xl mb-8 text-balance leading-[1]">
             From soil to sanctuary, in three movements.
           </h2>
-          <p className="text-forest/70 max-w-xl mx-auto mb-12 leading-relaxed">
+          <p className="text-lg md:text-xl text-forest/70 max-w-2xl mx-auto mb-12 leading-relaxed">
             A careful sequence — selection, blueprinting, build. We invite you to witness the making.
           </p>
+
           <Link
             to="/bespoke"
             className="inline-flex items-center gap-3 bg-forest text-paper px-7 py-3.5 rounded-full text-[11px] uppercase tracking-widest hover:bg-forest/90 transition-colors"
