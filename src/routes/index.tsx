@@ -51,8 +51,26 @@ function HomePage() {
         </div>
       </section>
 
+      {/* Primary CTA */}
+      <section className="px-6 md:px-10 pb-24 md:pb-32">
+        <div className="max-w-4xl mx-auto text-center bg-moss/5 border border-forest/10 rounded-sm px-6 py-14 md:px-12 md:py-16">
+          <p className="text-lg md:text-2xl text-forest/75 leading-relaxed max-w-2xl mx-auto mb-8">
+            Tell us about your vision, and we'll create something uniquely yours.
+          </p>
+          <a
+            href="https://forms.gle/WC1ThJ3Y6sEM6iJu9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex w-full sm:w-auto items-center justify-center gap-3 bg-moss text-paper px-10 py-5 rounded-full text-base md:text-lg font-medium tracking-wide shadow-lg shadow-forest/20 hover:bg-forest transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2"
+          >
+            Start Your Bespoke Journey
+            <span aria-hidden>→</span>
+          </a>
+        </div>
+      </section>
 
       <CollectionsShowcase />
+
 
       {/* Best Sellers */}
       <section className="bg-forest text-paper py-24 md:py-32 px-6 md:px-10">
