@@ -44,34 +44,39 @@ export const Route = createFileRoute("/collections")({
 });
 
 const pieces = [
-  { name: "Bouclé Sectional Sofa", category: "Sofa", material: "Cream Bouclé · Hardwood Frame", img: gallery1, dim: "Custom configurations" },
-  { name: "Cloud Curve Sofa", category: "Sofa", material: "Charcoal Linen · Sculpted Form", img: gallery2, dim: "260 × 100 × 85 cm" },
-  { name: "Signature Line Sofa Set", category: "Sofa", material: "Hand-printed Bouclé", img: gallery3, dim: "Set of 3 · Custom" },
-  { name: "Velvet Sculptural Suite", category: "Sofa", material: "Mocha Velvet · Plinth Base", img: gallery4, dim: "Modular suite" },
-  { name: "Monochrome Living Set", category: "Sofa", material: "Cream Linen · Piped Detail", img: gallery5, dim: "3+2+1 seater" },
-  { name: "Ivory Curved Lounge Set", category: "Sofa", material: "Textured Ivory Upholstery · Sculpted Accent Chairs", img: sofaIvoryCurvedLoungeSet.url, dim: "3 seater + 2 lounge chairs" },
-  { name: "Onyx Marble Dining Table", category: "Dining", material: "Walnut Base · Bouclé Armchairs", img: dining1, dim: "Seats 8 · 240 × 110 cm" },
-  { name: "Arched Oval Dining Set", category: "Dining", material: "Pearl Marble · Sculpted Bouclé", img: dining2, dim: "Seats 6 · 220 × 100 cm" },
-  { name: "Carrara Curve Dining", category: "Dining", material: "Carrara Marble · Grey Bouclé", img: dining3, dim: "Seats 6 · 200 × 100 cm" },
-  { name: "Walnut Heritage Dining", category: "Dining", material: "Solid Walnut · Woven Linen", img: dining4, dim: "Seats 6 · 220 × 100 cm" },
-  { name: "Calacatta Console Dining", category: "Dining", material: "Calacatta Top · Walnut Frame", img: dining5, dim: "Seats 6 · 200 × 95 cm" },
-  { name: "Cane-Back Dining Set", category: "Dining", material: "Marble Top · Rattan Detail", img: dining6, dim: "Seats 6 · 180 × 95 cm" },
-  { name: "Fluted Pedestal Dining", category: "Dining", material: "Marble Oval · Fluted Base", img: dining8, dim: "Seats 6 · 200 × 100 cm" },
-  { name: "Fluted Oak Media Wall", category: "TV Console", material: "Oak Veneer · Ribbed Base Console", img: tvConsoleFlutedOakWall.url, dim: "Wall unit · Custom" },
-  { name: "Stone Fireplace Media Wall", category: "TV Console", material: "Bookmatched Stone · Built-in Fireplace", img: tvConsoleStoneFireplaceWall.url, dim: "Wall unit · Custom" },
-  { name: "Marble Top Oval Console", category: "TV Console", material: "Fluted Base · Marble Top", img: tvConsoleMarbleTopOval.url, dim: "Low console · Custom" },
-  { name: "Rounded Oak Credenza", category: "TV Console", material: "Oak Finish · Soft Radius Ends", img: tvConsoleRoundedOakCredenza.url, dim: "4-door console" },
-  { name: "Bookmatched Fireplace Wall", category: "TV Console", material: "Stone Slab · Glass Display Towers", img: tvConsoleBookmatchedFireplaceWall.url, dim: "Feature wall · Custom" },
-  { name: "Display Feature TV Wall", category: "TV Console", material: "Curved Shelving · Marble Base", img: tvConsoleDisplayFeatureWall.url, dim: "Feature wall · Custom" },
-  { name: "Emerald Panel Bedroom", category: "Bedroom", material: "Upholstered Headboard · Walnut Detail", img: bedroomEmeraldSuite.url, dim: "Full bedroom set" },
-  { name: "Minimal Panel Bedroom", category: "Bedroom", material: "Floating Bed Base · Gloss Wardrobe", img: bedroomMinimalPanelSuite.url, dim: "Bedroom suite" },
-  { name: "Luxe Dark Panel Bedroom", category: "Bedroom", material: "Integrated Lighting · Wood Panel Finish", img: bedroomLuxeDarkPanelSuite.url, dim: "Full bedroom set" },
-  { name: "Charcoal Bouclé Bed Frame", category: "Bedroom", material: "Channel-tufted charcoal bouclé over a solid hardwood frame, with a low platform base and softly rounded footboard. Built for a grounded, hotel-suite calm.", img: bedCharcoalBouclePlatform.url, dim: "King · Custom sizes" },
-  { name: "Grey Tufted Panel Bed Frame", category: "Bedroom", material: "A tall diamond-tufted headboard in dove grey upholstery, hand-stitched onto a seasoned hardwood carcass. Classic proportions with a quiet, modern finish.", img: bedGreyTuftedPanel.url, dim: "King · Custom sizes" },
-  { name: "Ivory Bouclé Sleigh Bed Frame", category: "Bedroom", material: "Curved ivory bouclé wraps a sculpted sleigh silhouette built on kiln-dried hardwood. Generous scroll ends give the frame its soft, enveloping shape.", img: bedIvoryBoucleSleigh.url, dim: "King · Custom sizes" },
+  { name: "Bouclé Sectional Sofa", category: "Sofa", price: 1800000, material: "Cream Bouclé · Hardwood Frame", img: gallery1, dim: "Custom configurations" },
+  { name: "Cloud Curve Sofa", category: "Sofa", price: 2200000, material: "Charcoal Linen · Sculpted Form", img: gallery2, dim: "260 × 100 × 85 cm" },
+  { name: "Signature Line Sofa Set", category: "Sofa", price: 2500000, material: "Hand-printed Bouclé", img: gallery3, dim: "Set of 3 · Custom" },
+  { name: "Velvet Sculptural Suite", category: "Sofa", price: 2400000, material: "Mocha Velvet · Plinth Base", img: gallery4, dim: "Modular suite" },
+  { name: "Monochrome Living Set", category: "Sofa", price: 2100000, material: "Cream Linen · Piped Detail", img: gallery5, dim: "3+2+1 seater" },
+  { name: "Ivory Curved Lounge Set", category: "Sofa", price: 2300000, material: "Textured Ivory Upholstery · Sculpted Accent Chairs", img: sofaIvoryCurvedLoungeSet.url, dim: "3 seater + 2 lounge chairs" },
+  { name: "Onyx Marble Dining Table", category: "Dining", price: 3000000, material: "Walnut Base · Bouclé Armchairs", img: dining1, dim: "Seats 8 · 240 × 110 cm" },
+  { name: "Arched Oval Dining Set", category: "Dining", price: 2800000, material: "Pearl Marble · Sculpted Bouclé", img: dining2, dim: "Seats 6 · 220 × 100 cm" },
+  { name: "Carrara Curve Dining", category: "Dining", price: 2600000, material: "Carrara Marble · Grey Bouclé", img: dining3, dim: "Seats 6 · 200 × 100 cm" },
+  { name: "Walnut Heritage Dining", category: "Dining", price: 2500000, material: "Solid Walnut · Woven Linen", img: dining4, dim: "Seats 6 · 220 × 100 cm" },
+  { name: "Calacatta Console Dining", category: "Dining", price: 2700000, material: "Calacatta Top · Walnut Frame", img: dining5, dim: "Seats 6 · 200 × 95 cm" },
+  { name: "Cane-Back Dining Set", category: "Dining", price: 2200000, material: "Marble Top · Rattan Detail", img: dining6, dim: "Seats 6 · 180 × 95 cm" },
+  { name: "Fluted Pedestal Dining", category: "Dining", price: 2900000, material: "Marble Oval · Fluted Base", img: dining8, dim: "Seats 6 · 200 × 100 cm" },
+  { name: "Fluted Oak Media Wall", category: "TV Console", price: 2000000, material: "Oak Veneer · Ribbed Base Console", img: tvConsoleFlutedOakWall.url, dim: "Wall unit · Custom" },
+  { name: "Stone Fireplace Media Wall", category: "TV Console", price: 2500000, material: "Bookmatched Stone · Built-in Fireplace", img: tvConsoleStoneFireplaceWall.url, dim: "Wall unit · Custom" },
+  { name: "Marble Top Oval Console", category: "TV Console", price: 1600000, material: "Fluted Base · Marble Top", img: tvConsoleMarbleTopOval.url, dim: "Low console · Custom" },
+  { name: "Rounded Oak Credenza", category: "TV Console", price: 1200000, material: "Oak Finish · Soft Radius Ends", img: tvConsoleRoundedOakCredenza.url, dim: "4-door console" },
+  { name: "Bookmatched Fireplace Wall", category: "TV Console", price: 2400000, material: "Stone Slab · Glass Display Towers", img: tvConsoleBookmatchedFireplaceWall.url, dim: "Feature wall · Custom" },
+  { name: "Display Feature TV Wall", category: "TV Console", price: 2200000, material: "Curved Shelving · Marble Base", img: tvConsoleDisplayFeatureWall.url, dim: "Feature wall · Custom" },
+  { name: "Emerald Panel Bedroom", category: "Bedroom", price: 1500000, material: "Upholstered Headboard · Walnut Detail", img: bedroomEmeraldSuite.url, dim: "Full bedroom set" },
+  { name: "Minimal Panel Bedroom", category: "Bedroom", price: 1200000, material: "Floating Bed Base · Gloss Wardrobe", img: bedroomMinimalPanelSuite.url, dim: "Bedroom suite" },
+  { name: "Luxe Dark Panel Bedroom", category: "Bedroom", price: 1400000, material: "Integrated Lighting · Wood Panel Finish", img: bedroomLuxeDarkPanelSuite.url, dim: "Full bedroom set" },
+  { name: "Charcoal Bouclé Bed Frame", category: "Bedroom", price: 950000, material: "Channel-tufted charcoal bouclé over a solid hardwood frame, with a low platform base and softly rounded footboard. Built for a grounded, hotel-suite calm.", img: bedCharcoalBouclePlatform.url, dim: "King · Custom sizes" },
+  { name: "Grey Tufted Panel Bed Frame", category: "Bedroom", price: 850000, material: "A tall diamond-tufted headboard in dove grey upholstery, hand-stitched onto a seasoned hardwood carcass. Classic proportions with a quiet, modern finish.", img: bedGreyTuftedPanel.url, dim: "King · Custom sizes" },
+  { name: "Ivory Bouclé Sleigh Bed Frame", category: "Bedroom", price: 1100000, material: "Curved ivory bouclé wraps a sculpted sleigh silhouette built on kiln-dried hardwood. Generous scroll ends give the frame its soft, enveloping shape.", img: bedIvoryBoucleSleigh.url, dim: "King · Custom sizes" },
 ];
 
 const categories = ["All", "Sofa", "Dining", "TV Console", "Bedroom", "Bespoke"];
+
+function formatPrice(amount: number) {
+  return `₦${amount.toLocaleString("en-NG")}`;
+}
+
 
 function CollectionsPage() {
   const search = useSearch({ from: "/collections" });
@@ -144,7 +149,10 @@ function CollectionsPage() {
                 />
               </div>
               <div className="flex items-start justify-between gap-4">
-                <h3 className="font-display text-2xl">{p.name}</h3>
+                <div>
+                  <h3 className="font-display text-2xl">{p.name}</h3>
+                  <p className="font-mono text-sm font-medium text-moss mt-1">{formatPrice(p.price)}</p>
+                </div>
                 <span className="font-mono text-[10px] text-forest/50 whitespace-nowrap">{p.dim}</span>
               </div>
             </article>
