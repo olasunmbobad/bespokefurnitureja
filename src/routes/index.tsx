@@ -96,7 +96,7 @@ function HomePage() {
                 <div className="flex justify-between items-start gap-4">
                   <div>
                     <h3 className="font-display text-2xl mb-1">{p.name}</h3>
-                    <p className="font-mono text-[10px] uppercase tracking-widest text-leaf/70">{p.material}</p>
+                    <p className="font-mono text-sm font-medium text-leaf">{formatPrice(p.price)}</p>
                   </div>
                   <span className="font-mono text-[10px] border border-paper/20 px-2 py-1">{p.no}</span>
                 </div>
