@@ -30,7 +30,7 @@ export function SiteFooter() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pt-10 border-t border-forest/10 font-mono text-[10px] uppercase tracking-widest text-forest/50">
           <span>© {new Date().getFullYear()} BespokeFurniture9ja</span>
           <div className="flex gap-6">
-            <Link to="/collections" className="hover:text-forest">Collections</Link>
+            <Link to="/collections" search={{ category: undefined }} className="hover:text-forest">Collections</Link>
             <Link to="/bespoke" className="hover:text-forest">Process</Link>
             <Link to="/contact" className="hover:text-forest">Contact</Link>
           </div>

@@ -106,7 +106,7 @@ function HomePage() {
 
           <div className="mt-20 text-center">
             <Link
-              to="/collections"
+              to="/collections" search={{ category: undefined }}
               className="inline-flex items-center gap-3 border-b border-paper/30 pb-1 text-[11px] uppercase tracking-widest hover:border-paper transition-colors"
             >
               View full catalog <span aria-hidden>→</span>
