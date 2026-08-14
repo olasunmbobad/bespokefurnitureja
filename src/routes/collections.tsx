@@ -66,6 +66,9 @@ const pieces = [
   { name: "Emerald Panel Bedroom", category: "Bedroom", material: "Upholstered Headboard · Walnut Detail", img: bedroomEmeraldSuite.url, dim: "Full bedroom set" },
   { name: "Minimal Panel Bedroom", category: "Bedroom", material: "Floating Bed Base · Gloss Wardrobe", img: bedroomMinimalPanelSuite.url, dim: "Bedroom suite" },
   { name: "Luxe Dark Panel Bedroom", category: "Bedroom", material: "Integrated Lighting · Wood Panel Finish", img: bedroomLuxeDarkPanelSuite.url, dim: "Full bedroom set" },
+  { name: "Charcoal Bouclé Bed Frame", category: "Bedroom", material: "Channel-tufted charcoal bouclé over a solid hardwood frame, with a low platform base and softly rounded footboard. Built for a grounded, hotel-suite calm.", img: bedCharcoalBouclePlatform.url, dim: "King · Custom sizes" },
+  { name: "Grey Tufted Panel Bed Frame", category: "Bedroom", material: "A tall diamond-tufted headboard in dove grey upholstery, hand-stitched onto a seasoned hardwood carcass. Classic proportions with a quiet, modern finish.", img: bedGreyTuftedPanel.url, dim: "King · Custom sizes" },
+  { name: "Ivory Bouclé Sleigh Bed Frame", category: "Bedroom", material: "Curved ivory bouclé wraps a sculpted sleigh silhouette built on kiln-dried hardwood. Generous scroll ends give the frame its soft, enveloping shape.", img: bedIvoryBoucleSleigh.url, dim: "King · Custom sizes" },
 ];
 
 const categories = ["All", "Sofa", "Dining", "TV Console", "Bedroom", "Bespoke"];
