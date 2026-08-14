@@ -28,6 +28,11 @@ const featured = [
   { name: "Dining Set", material: "Smoked Mahogany", img: diningSetBestseller, no: "03", price: 2800000 },
 ];
 
+function formatPrice(amount: number) {
+  return `₦${amount.toLocaleString("en-NG")}`;
+}
+
+
 function HomePage() {
   return (
     <div className="bg-paper text-forest">

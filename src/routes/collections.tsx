@@ -73,6 +73,11 @@ const pieces = [
 
 const categories = ["All", "Sofa", "Dining", "TV Console", "Bedroom", "Bespoke"];
 
+function formatPrice(amount: number) {
+  return `₦${amount.toLocaleString("en-NG")}`;
+}
+
+
 function CollectionsPage() {
   const search = useSearch({ from: "/collections" });
   const navigate = useNavigate({ from: "/collections" });
