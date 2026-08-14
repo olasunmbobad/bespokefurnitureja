@@ -23,9 +23,9 @@ export const Route = createFileRoute("/")({
 });
 
 const featured = [
-  { name: "Sofa Set", material: "Cream Bouclé · Hardwood Frame", img: sofaSetBestseller, no: "01" },
-  { name: "TV Console", material: "Hand-planed Iroko", img: pieceSideboard, no: "02" },
-  { name: "Dining Set", material: "Smoked Mahogany", img: diningSetBestseller, no: "03" },
+  { name: "Sofa Set", material: "Cream Bouclé · Hardwood Frame", img: sofaSetBestseller, no: "01", price: 2100000 },
+  { name: "TV Console", material: "Hand-planed Iroko", img: pieceSideboard, no: "02", price: 1800000 },
+  { name: "Dining Set", material: "Smoked Mahogany", img: diningSetBestseller, no: "03", price: 2800000 },
 ];
 
 function HomePage() {
