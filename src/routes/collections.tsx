@@ -24,6 +24,9 @@ import tvConsoleFlutedOakWall from "@/assets/tv-console-fluted-oak-wall.png.asse
 import tvConsoleMarbleTopOval from "@/assets/tv-console-marble-top-oval.png.asset.json";
 import tvConsoleRoundedOakCredenza from "@/assets/tv-console-rounded-oak-credenza.png.asset.json";
 import tvConsoleStoneFireplaceWall from "@/assets/tv-console-stone-fireplace-wall.png.asset.json";
+import bedCharcoalBouclePlatform from "@/assets/bed-charcoal-boucle-platform.png.asset.json";
+import bedGreyTuftedPanel from "@/assets/bed-grey-tufted-panel.png.asset.json";
+import bedIvoryBoucleSleigh from "@/assets/bed-ivory-boucle-sleigh.png.asset.json";
 
 export const Route = createFileRoute("/collections")({
   validateSearch: (search: Record<string, unknown>) => ({
