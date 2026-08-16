@@ -6,9 +6,7 @@ import { CategoryShowcase } from "@/components/CategoryShowcase";
 import { CollectionsShowcase } from "@/components/CollectionsShowcase";
 
 import ceoPortrait from "@/assets/ceo-portrait.jpg";
-import sofaSetBestseller from "@/assets/sofa-set-bestseller.jpg";
-import diningSetBestseller from "@/assets/dining-set-bestseller.jpg";
-import pieceSideboard from "@/assets/piece-sideboard.jpg";
+import { getPiece, formatPrice } from "@/lib/catalog";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -22,15 +20,9 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
-const featured = [
-  { name: "Sofa Set", material: "Cream Bouclé · Hardwood Frame", img: sofaSetBestseller, no: "01", price: 2100000 },
-  { name: "TV Console", material: "Hand-planed Iroko", img: pieceSideboard, no: "02", price: 1800000 },
-  { name: "Dining Set", material: "Smoked Mahogany", img: diningSetBestseller, no: "03", price: 2800000 },
-];
-
-function formatPrice(amount: number) {
-  return `₦${amount.toLocaleString("en-NG")}`;
-}
+const featured = ["sofa-set", "tv-console", "dining-set"]
+  .map((slug) => getPiece(slug)!)
+  .map((p, i) => ({ ...p, no: `0${i + 1}` }));
 
 
 function HomePage() {
@@ -87,15 +79,20 @@ function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
             {featured.map((p, i) => (
-              <article key={p.name} className={i === 1 ? "md:pt-16" : ""}>
+              <Link
+                key={p.slug}
+                to="/products/$slug"
+                params={{ slug: p.slug }}
+                className={`group block ${i === 1 ? "md:pt-16" : ""}`}
+              >
                 <div className="aspect-[3/4] overflow-hidden rounded-sm bg-paper/5 mb-6">
                   <img
-                    src={p.img}
+                    src={p.images[0]}
                     alt={p.name}
                     loading="lazy"
                     width={768}
                     height={1024}
-                    className="w-full h-full object-cover hover:scale-[1.03] transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)]"
+                    className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)]"
                   />
                 </div>
                 <div className="flex justify-between items-start gap-4">
@@ -105,7 +102,7 @@ function HomePage() {
                   </div>
                   <span className="font-mono text-[10px] border border-paper/20 px-2 py-1">{p.no}</span>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
 
