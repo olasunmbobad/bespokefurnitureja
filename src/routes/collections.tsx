@@ -1,32 +1,8 @@
-import { createFileRoute, useSearch, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, useSearch, useNavigate, Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
-import gallery1 from "@/assets/gallery-1.png";
-import gallery2 from "@/assets/gallery-2.png";
-import gallery3 from "@/assets/gallery-3.png";
-import gallery4 from "@/assets/gallery-4.png";
-import gallery5 from "@/assets/gallery-5.png";
-import dining1 from "@/assets/dining-1.png";
-import dining2 from "@/assets/dining-2.png";
-import dining3 from "@/assets/dining-3.png";
-import dining4 from "@/assets/dining-4.png";
-import dining5 from "@/assets/dining-5.png";
-import dining6 from "@/assets/dining-6.png";
-import dining8 from "@/assets/dining-8.png";
-import bedroomEmeraldSuite from "@/assets/bedroom-emerald-suite.png.asset.json";
-import bedroomMinimalPanelSuite from "@/assets/bedroom-minimal-panel-suite.png.asset.json";
-import bedroomLuxeDarkPanelSuite from "@/assets/bedroom-luxe-dark-panel-suite.png.asset.json";
-import sofaIvoryCurvedLoungeSet from "@/assets/sofa-ivory-curved-lounge-set.png.asset.json";
-import tvConsoleBookmatchedFireplaceWall from "@/assets/tv-console-bookmatched-fireplace-wall.png.asset.json";
-import tvConsoleDisplayFeatureWall from "@/assets/tv-console-display-feature-wall.png.asset.json";
-import tvConsoleFlutedOakWall from "@/assets/tv-console-fluted-oak-wall.png.asset.json";
-import tvConsoleMarbleTopOval from "@/assets/tv-console-marble-top-oval.png.asset.json";
-import tvConsoleRoundedOakCredenza from "@/assets/tv-console-rounded-oak-credenza.png.asset.json";
-import tvConsoleStoneFireplaceWall from "@/assets/tv-console-stone-fireplace-wall.png.asset.json";
-import bedCharcoalBouclePlatform from "@/assets/bed-charcoal-boucle-platform.png.asset.json";
-import bedGreyTuftedPanel from "@/assets/bed-grey-tufted-panel.png.asset.json";
-import bedIvoryBoucleSleigh from "@/assets/bed-ivory-boucle-sleigh.png.asset.json";
+import { pieces, formatPrice } from "@/lib/catalog";
 
 export const Route = createFileRoute("/collections")({
   validateSearch: (search: Record<string, unknown>) => ({
@@ -43,40 +19,7 @@ export const Route = createFileRoute("/collections")({
   component: CollectionsPage,
 });
 
-const pieces = [
-  { name: "Bouclé Sectional Sofa", category: "Sofa", price: 1800000, material: "Cream Bouclé · Hardwood Frame", img: gallery1, dim: "Custom configurations" },
-  { name: "Cloud Curve Sofa", category: "Sofa", price: 2200000, material: "Charcoal Linen · Sculpted Form", img: gallery2, dim: "260 × 100 × 85 cm" },
-  { name: "Signature Line Sofa Set", category: "Sofa", price: 2500000, material: "Hand-printed Bouclé", img: gallery3, dim: "Set of 3 · Custom" },
-  { name: "Velvet Sculptural Suite", category: "Sofa", price: 2400000, material: "Mocha Velvet · Plinth Base", img: gallery4, dim: "Modular suite" },
-  { name: "Monochrome Living Set", category: "Sofa", price: 2100000, material: "Cream Linen · Piped Detail", img: gallery5, dim: "3+2+1 seater" },
-  { name: "Ivory Curved Lounge Set", category: "Sofa", price: 2300000, material: "Textured Ivory Upholstery · Sculpted Accent Chairs", img: sofaIvoryCurvedLoungeSet.url, dim: "3 seater + 2 lounge chairs" },
-  { name: "Onyx Marble Dining Table", category: "Dining", price: 3000000, material: "Walnut Base · Bouclé Armchairs", img: dining1, dim: "Seats 8 · 240 × 110 cm" },
-  { name: "Arched Oval Dining Set", category: "Dining", price: 2800000, material: "Pearl Marble · Sculpted Bouclé", img: dining2, dim: "Seats 6 · 220 × 100 cm" },
-  { name: "Carrara Curve Dining", category: "Dining", price: 2600000, material: "Carrara Marble · Grey Bouclé", img: dining3, dim: "Seats 6 · 200 × 100 cm" },
-  { name: "Walnut Heritage Dining", category: "Dining", price: 2500000, material: "Solid Walnut · Woven Linen", img: dining4, dim: "Seats 6 · 220 × 100 cm" },
-  { name: "Calacatta Console Dining", category: "Dining", price: 2700000, material: "Calacatta Top · Walnut Frame", img: dining5, dim: "Seats 6 · 200 × 95 cm" },
-  { name: "Cane-Back Dining Set", category: "Dining", price: 2200000, material: "Marble Top · Rattan Detail", img: dining6, dim: "Seats 6 · 180 × 95 cm" },
-  { name: "Fluted Pedestal Dining", category: "Dining", price: 2900000, material: "Marble Oval · Fluted Base", img: dining8, dim: "Seats 6 · 200 × 100 cm" },
-  { name: "Fluted Oak Media Wall", category: "TV Console", price: 2000000, material: "Oak Veneer · Ribbed Base Console", img: tvConsoleFlutedOakWall.url, dim: "Wall unit · Custom" },
-  { name: "Stone Fireplace Media Wall", category: "TV Console", price: 2500000, material: "Bookmatched Stone · Built-in Fireplace", img: tvConsoleStoneFireplaceWall.url, dim: "Wall unit · Custom" },
-  { name: "Marble Top Oval Console", category: "TV Console", price: 1600000, material: "Fluted Base · Marble Top", img: tvConsoleMarbleTopOval.url, dim: "Low console · Custom" },
-  { name: "Rounded Oak Credenza", category: "TV Console", price: 1200000, material: "Oak Finish · Soft Radius Ends", img: tvConsoleRoundedOakCredenza.url, dim: "4-door console" },
-  { name: "Bookmatched Fireplace Wall", category: "TV Console", price: 2400000, material: "Stone Slab · Glass Display Towers", img: tvConsoleBookmatchedFireplaceWall.url, dim: "Feature wall · Custom" },
-  { name: "Display Feature TV Wall", category: "TV Console", price: 2200000, material: "Curved Shelving · Marble Base", img: tvConsoleDisplayFeatureWall.url, dim: "Feature wall · Custom" },
-  { name: "Emerald Panel Bedroom", category: "Bedroom", price: 1500000, material: "Upholstered Headboard · Walnut Detail", img: bedroomEmeraldSuite.url, dim: "Full bedroom set" },
-  { name: "Minimal Panel Bedroom", category: "Bedroom", price: 1200000, material: "Floating Bed Base · Gloss Wardrobe", img: bedroomMinimalPanelSuite.url, dim: "Bedroom suite" },
-  { name: "Luxe Dark Panel Bedroom", category: "Bedroom", price: 1400000, material: "Integrated Lighting · Wood Panel Finish", img: bedroomLuxeDarkPanelSuite.url, dim: "Full bedroom set" },
-  { name: "Charcoal Bouclé Bed Frame", category: "Bedroom", price: 950000, material: "Channel-tufted charcoal bouclé over a solid hardwood frame, with a low platform base and softly rounded footboard. Built for a grounded, hotel-suite calm.", img: bedCharcoalBouclePlatform.url, dim: "King · Custom sizes" },
-  { name: "Grey Tufted Panel Bed Frame", category: "Bedroom", price: 850000, material: "A tall diamond-tufted headboard in dove grey upholstery, hand-stitched onto a seasoned hardwood carcass. Classic proportions with a quiet, modern finish.", img: bedGreyTuftedPanel.url, dim: "King · Custom sizes" },
-  { name: "Ivory Bouclé Sleigh Bed Frame", category: "Bedroom", price: 1100000, material: "Curved ivory bouclé wraps a sculpted sleigh silhouette built on kiln-dried hardwood. Generous scroll ends give the frame its soft, enveloping shape.", img: bedIvoryBoucleSleigh.url, dim: "King · Custom sizes" },
-];
-
 const categories = ["All", "Sofa", "Dining", "TV Console", "Bedroom", "Bespoke"];
-
-function formatPrice(amount: number) {
-  return `₦${amount.toLocaleString("en-NG")}`;
-}
-
 
 function CollectionsPage() {
   const search = useSearch({ from: "/collections" });
@@ -136,11 +79,11 @@ function CollectionsPage() {
 
       <section className="px-6 md:px-10 pb-24 md:pb-32">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-          {filteredPieces.map((p, i) => (
-            <article key={p.name + i} className="group">
+          {filteredPieces.map((p) => (
+            <Link key={p.slug} to="/products/$slug" params={{ slug: p.slug }} className="group block">
               <div className="aspect-[3/4] overflow-hidden rounded-sm bg-moss/5 mb-6">
                 <img
-                  src={p.img}
+                  src={p.images[0]}
                   alt={p.name}
                   loading="lazy"
                   width={768}
@@ -155,7 +98,7 @@ function CollectionsPage() {
                 </div>
                 <span className="font-mono text-[10px] text-forest/50 whitespace-nowrap">{p.dim}</span>
               </div>
-            </article>
+            </Link>
           ))}
           {filteredPieces.length === 0 && (
             <p className="col-span-full text-center text-forest/60 py-16">
