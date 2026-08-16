@@ -50,7 +50,7 @@ const raw: Omit<Piece, "slug">[] = [
   { name: "Sofa Set", category: "Sofa", price: 2100000, material: "Cream Bouclé over a seasoned hardwood frame, tailored in our Lagos workshop.", dim: "3+2+1 seater · Custom", images: [sofaSetBestseller, gallery1, gallery5] },
   { name: "TV Console", category: "TV Console", price: 1800000, material: "Hand-planed Iroko with soft-close joinery and a low, grounded profile.", dim: "Custom widths", images: [pieceSideboard, tvConsoleRoundedOakCredenza.url, tvConsoleMarbleTopOval.url] },
   { name: "Dining Set", category: "Dining", price: 2800000, material: "Smoked Mahogany table with upholstered seating, built to order.", dim: "Seats 6–8 · Custom", images: [diningSetBestseller, dining4, dining1] },
-  { name: "Bouclé Sectional Sofa", category: "Sofa", price: 1800000, material: "Cream Bouclé · Hardwood Frame", dim: "Custom configurations", images: [gallery1] },
+  { name: "Cloud Curve Sofa", category: "Sofa", price: 2200000, material: "Charcoal Linen · Sculpted Form", dim: "260 × 100 × 85 cm", images: [gallery2] },
   { name: "Cloud Curve Sofa", category: "Sofa", price: 2200000, material: "Charcoal Linen · Sculpted Form", dim: "260 × 100 × 85 cm", images: [gallery2] },
   { name: "Signature Line Sofa Set", category: "Sofa", price: 2500000, material: "Hand-printed Bouclé", dim: "Set of 3 · Custom", images: [gallery3] },
   { name: "Velvet Sculptural Suite", category: "Sofa", price: 2400000, material: "Mocha Velvet · Plinth Base", dim: "Modular suite", images: [gallery4] },
