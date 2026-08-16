@@ -2,7 +2,7 @@ import { defineTool } from "@lovable.dev/mcp-js";
 import { z } from "zod";
 
 const pieces = [
-  { name: "Bouclé Sectional Sofa", category: "Sofa", price: 1800000, material: "Cream Bouclé · Hardwood Frame", dimensions: "Custom configurations" },
+  { name: "Cloud Curve Sofa", category: "Sofa", price: 2200000, material: "Charcoal Linen · Sculpted Form", dimensions: "260 × 100 × 85 cm" },
   { name: "Cloud Curve Sofa", category: "Sofa", price: 2200000, material: "Charcoal Linen · Sculpted Form", dimensions: "260 × 100 × 85 cm" },
   { name: "Signature Line Sofa Set", category: "Sofa", price: 2500000, material: "Hand-printed Bouclé", dimensions: "Set of 3 · Custom" },
   { name: "Velvet Sculptural Suite", category: "Sofa", price: 2400000, material: "Mocha Velvet · Plinth Base", dimensions: "Modular suite" },
