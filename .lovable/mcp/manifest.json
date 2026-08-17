@@ -47,7 +47,6 @@
               "enum": [
                 "Sofa",
                 "Dining",
-                "TV Console",
                 "Bedroom"
               ]
             }

@@ -2,22 +2,22 @@ import { useEffect, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import sofaSetBestseller from "@/assets/sofa-set-bestseller.jpg";
 import diningSetBestseller from "@/assets/dining-set-bestseller.jpg";
-import pieceSideboard from "@/assets/piece-sideboard.jpg";
 import bedroomEmeraldSuite from "@/assets/bedroom-emerald-suite.png.asset.json";
 import sofaIvory from "@/assets/sofa-ivory-curved-lounge-set.png.asset.json";
-import tvFluted from "@/assets/tv-console-fluted-oak-wall.png.asset.json";
 import bedroomLuxe from "@/assets/bedroom-luxe-dark-panel-suite.png.asset.json";
-import tvMarble from "@/assets/tv-console-marble-top-oval.png.asset.json";
+import bedCharcoal from "@/assets/bed-charcoal-boucle-platform.png.asset.json";
+import bedGrey from "@/assets/bed-grey-tufted-panel.png.asset.json";
+import bedIvory from "@/assets/bed-ivory-boucle-sleigh.png.asset.json";
 
 const slides = [
   { name: "Ivory Curved Lounge Set", category: "Sofa", img: sofaIvory.url },
   { name: "Heritage Dining Set", category: "Dining", img: diningSetBestseller },
-  { name: "Fluted Oak Media Wall", category: "TV Console", img: tvFluted.url },
   { name: "Emerald Bedroom Suite", category: "Bedroom", img: bedroomEmeraldSuite.url },
   { name: "Bouclé Sofa Set", category: "Sofa", img: sofaSetBestseller },
-  { name: "Marble Top Console", category: "TV Console", img: tvMarble.url },
   { name: "Luxe Panel Bedroom", category: "Bedroom", img: bedroomLuxe.url },
-  { name: "Hand-planed Sideboard", category: "TV Console", img: pieceSideboard },
+  { name: "Charcoal Bouclé Bed Frame", category: "Bedroom", img: bedCharcoal.url },
+  { name: "Grey Tufted Panel Bed Frame", category: "Bedroom", img: bedGrey.url },
+  { name: "Ivory Bouclé Sleigh Bed Frame", category: "Bedroom", img: bedIvory.url },
 ];
 
 const INTERVAL = 3500;

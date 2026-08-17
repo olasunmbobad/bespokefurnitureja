@@ -1,11 +1,10 @@
 import { Link } from "@tanstack/react-router";
-import { Utensils, Armchair, Tv, BedDouble, LayoutGrid } from "lucide-react";
+import { Utensils, Armchair, BedDouble, LayoutGrid } from "lucide-react";
 
 const categories = [
   { name: "All", icon: LayoutGrid },
   { name: "Sofa", icon: Armchair },
   { name: "Dining", icon: Utensils },
-  { name: "TV Console", icon: Tv },
   { name: "Bedroom", icon: BedDouble },
 ];
 
@@ -13,7 +12,7 @@ export function CategoryShowcase() {
   return (
     <section className="bg-paper border-y border-forest/10 py-10 md:py-14 px-6 md:px-10">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-5 gap-4 md:gap-8">
+        <div className="grid grid-cols-4 gap-4 md:gap-8">
           {categories.map((c) => {
             const Icon = c.icon;
             return (

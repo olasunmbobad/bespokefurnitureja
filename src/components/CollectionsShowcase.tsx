@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import livingCollection from "@/assets/gallery-1.png";
 import diningCollection from "@/assets/dining-1.png";
-import mediaCollection from "@/assets/tv-console-fluted-oak-wall.png.asset.json";
 import bedroomCollection from "@/assets/bedroom-emerald-suite.png.asset.json";
 import bespokeCollection from "@/assets/craft-hands.jpg";
 
@@ -19,13 +18,6 @@ const collections = [
     img: diningCollection,
     category: "Dining",
     count: "9 pieces",
-  },
-  {
-    name: "The Media Wall",
-    description: "Statement TV consoles and feature walls that anchor the room with fluted oak, stone, and clean lines.",
-    img: mediaCollection.url,
-    category: "TV Console",
-    count: "8 pieces",
   },
   {
     name: "The Bedroom",
