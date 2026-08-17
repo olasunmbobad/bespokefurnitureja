@@ -11,7 +11,7 @@ export const Route = createFileRoute("/collections")({
   head: () => ({
     meta: [
       { title: "Collections — BESPOKEFURNITURE9ja" },
-      { name: "description", content: "Browse our curated catalog: dining, lounge, storage, and bespoke pieces in Iroko, Mahogany, and Walnut." },
+      { name: "description", content: "Browse our curated catalog: dining, lounge, bedroom, and bespoke pieces in Iroko, Mahogany, and Walnut." },
       { property: "og:title", content: "Collections — BespokeFurniture9ja" },
       { property: "og:description", content: "Heirloom furniture catalog. Lagos studio." },
     ],
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/collections")({
   component: CollectionsPage,
 });
 
-const categories = ["All", "Sofa", "Dining", "TV Console", "Bedroom", "Bespoke"];
+const categories = ["All", "Sofa", "Dining", "Bedroom", "Bespoke"];
 
 function CollectionsPage() {
   const search = useSearch({ from: "/collections" });
