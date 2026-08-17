@@ -20,7 +20,7 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
-const featured = ["sofa-set", "tv-console", "dining-set"]
+const featured = ["sofa-set", "charcoal-boucle-bed-frame", "dining-set"]
   .map((slug) => getPiece(slug)!)
   .map((p, i) => ({ ...p, no: `0${i + 1}` }));
 
