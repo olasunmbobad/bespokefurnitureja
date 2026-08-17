@@ -12,17 +12,10 @@ import dining6 from "@/assets/dining-6.png";
 import dining8 from "@/assets/dining-8.png";
 import sofaSetBestseller from "@/assets/sofa-set-bestseller.jpg";
 import diningSetBestseller from "@/assets/dining-set-bestseller.jpg";
-import pieceSideboard from "@/assets/piece-sideboard.jpg";
 import bedroomEmeraldSuite from "@/assets/bedroom-emerald-suite.png.asset.json";
 import bedroomMinimalPanelSuite from "@/assets/bedroom-minimal-panel-suite.png.asset.json";
 import bedroomLuxeDarkPanelSuite from "@/assets/bedroom-luxe-dark-panel-suite.png.asset.json";
 import sofaIvoryCurvedLoungeSet from "@/assets/sofa-ivory-curved-lounge-set.png.asset.json";
-import tvConsoleBookmatchedFireplaceWall from "@/assets/tv-console-bookmatched-fireplace-wall.png.asset.json";
-import tvConsoleDisplayFeatureWall from "@/assets/tv-console-display-feature-wall.png.asset.json";
-import tvConsoleFlutedOakWall from "@/assets/tv-console-fluted-oak-wall.png.asset.json";
-import tvConsoleMarbleTopOval from "@/assets/tv-console-marble-top-oval.png.asset.json";
-import tvConsoleRoundedOakCredenza from "@/assets/tv-console-rounded-oak-credenza.png.asset.json";
-import tvConsoleStoneFireplaceWall from "@/assets/tv-console-stone-fireplace-wall.png.asset.json";
 import bedCharcoalBouclePlatform from "@/assets/bed-charcoal-boucle-platform.png.asset.json";
 import bedGreyTuftedPanel from "@/assets/bed-grey-tufted-panel.png.asset.json";
 import bedIvoryBoucleSleigh from "@/assets/bed-ivory-boucle-sleigh.png.asset.json";
@@ -48,9 +41,7 @@ export function slugify(name: string) {
 
 const raw: Omit<Piece, "slug">[] = [
   { name: "Sofa Set", category: "Sofa", price: 2100000, material: "Cream Bouclé over a seasoned hardwood frame, tailored in our Lagos workshop.", dim: "3+2+1 seater · Custom", images: [sofaSetBestseller, gallery1] },
-  { name: "TV Console", category: "TV Console", price: 1800000, material: "Hand-planed Iroko with soft-close joinery and a low, grounded profile.", dim: "Custom widths", images: [pieceSideboard, tvConsoleRoundedOakCredenza.url, tvConsoleMarbleTopOval.url] },
-  { name: "Dining Set", category: "Dining", price: 2800000, material: "Smoked Mahogany table with upholstered seating, built to order.", dim: "Seats 6–8 · Custom", images: [diningSetBestseller, dining4, dining1] },
-  { name: "Cloud Curve Sofa", category: "Sofa", price: 2200000, material: "Charcoal Linen · Sculpted Form", dim: "260 × 100 × 85 cm", images: [gallery2] },
+  { name: "Dining Set", category: "Dining", price: 2800000, material: "Smoked Mahogany table with upholstered seating, built to order.", dim: "Seats 6–8 · Custom", images: [diningSetBestseller] },
   { name: "Cloud Curve Sofa", category: "Sofa", price: 2200000, material: "Charcoal Linen · Sculpted Form", dim: "260 × 100 × 85 cm", images: [gallery2] },
   { name: "Signature Line Sofa Set", category: "Sofa", price: 2500000, material: "Hand-printed Bouclé", dim: "Set of 3 · Custom", images: [gallery3] },
   { name: "Velvet Sculptural Suite", category: "Sofa", price: 2400000, material: "Mocha Velvet · Plinth Base", dim: "Modular suite", images: [gallery4] },
@@ -63,12 +54,6 @@ const raw: Omit<Piece, "slug">[] = [
   { name: "Calacatta Console Dining", category: "Dining", price: 2700000, material: "Calacatta Top · Walnut Frame", dim: "Seats 6 · 200 × 95 cm", images: [dining5] },
   { name: "Cane-Back Dining Set", category: "Dining", price: 2200000, material: "Marble Top · Rattan Detail", dim: "Seats 6 · 180 × 95 cm", images: [dining6] },
   { name: "Fluted Pedestal Dining", category: "Dining", price: 2900000, material: "Marble Oval · Fluted Base", dim: "Seats 6 · 200 × 100 cm", images: [dining8] },
-  { name: "Fluted Oak Media Wall", category: "TV Console", price: 2000000, material: "Oak Veneer · Ribbed Base Console", dim: "Wall unit · Custom", images: [tvConsoleFlutedOakWall.url] },
-  { name: "Stone Fireplace Media Wall", category: "TV Console", price: 2500000, material: "Bookmatched Stone · Built-in Fireplace", dim: "Wall unit · Custom", images: [tvConsoleStoneFireplaceWall.url] },
-  { name: "Marble Top Oval Console", category: "TV Console", price: 1600000, material: "Fluted Base · Marble Top", dim: "Low console · Custom", images: [tvConsoleMarbleTopOval.url] },
-  { name: "Rounded Oak Credenza", category: "TV Console", price: 1200000, material: "Oak Finish · Soft Radius Ends", dim: "4-door console", images: [tvConsoleRoundedOakCredenza.url] },
-  { name: "Bookmatched Fireplace Wall", category: "TV Console", price: 2400000, material: "Stone Slab · Glass Display Towers", dim: "Feature wall · Custom", images: [tvConsoleBookmatchedFireplaceWall.url] },
-  { name: "Display Feature TV Wall", category: "TV Console", price: 2200000, material: "Curved Shelving · Marble Base", dim: "Feature wall · Custom", images: [tvConsoleDisplayFeatureWall.url] },
   { name: "Emerald Panel Bedroom", category: "Bedroom", price: 1500000, material: "Upholstered Headboard · Walnut Detail", dim: "Full bedroom set", images: [bedroomEmeraldSuite.url] },
   { name: "Minimal Panel Bedroom", category: "Bedroom", price: 1200000, material: "Floating Bed Base · Gloss Wardrobe", dim: "Bedroom suite", images: [bedroomMinimalPanelSuite.url] },
   { name: "Luxe Dark Panel Bedroom", category: "Bedroom", price: 1400000, material: "Integrated Lighting · Wood Panel Finish", dim: "Full bedroom set", images: [bedroomLuxeDarkPanelSuite.url] },
