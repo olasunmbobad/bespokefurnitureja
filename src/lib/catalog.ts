@@ -34,10 +34,13 @@ export type Piece = {
 
 export function slugify(name: string) {
   return name
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
 }
+
 
 const raw: Omit<Piece, "slug">[] = [
   { name: "Sofa Set", category: "Sofa", price: 2100000, material: "Cream Bouclé over a seasoned hardwood frame, tailored in our Lagos workshop.", dim: "3+2+1 seater · Custom", images: [sofaSetBestseller, gallery1] },
