@@ -21,8 +21,10 @@ export const Route = createFileRoute("/")({
 });
 
 const featured = ["sofa-set", "charcoal-boucle-bed-frame", "dining-set"]
-  .map((slug) => getPiece(slug)!)
+  .map((slug) => getPiece(slug))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p))
   .map((p, i) => ({ ...p, no: `0${i + 1}` }));
+
 
 
 function HomePage() {
