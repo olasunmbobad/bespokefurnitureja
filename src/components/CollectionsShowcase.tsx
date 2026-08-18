@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import livingCollection from "@/assets/gallery-1.png";
 import diningCollection from "@/assets/dining-1.png";
 import bedroomCollection from "@/assets/bedroom-emerald-suite.png.asset.json";
+import mediaCollection from "@/assets/tv-console-fluted-oak-wall.png.asset.json";
 import bespokeCollection from "@/assets/craft-hands.jpg";
 
 const collections = [
@@ -18,6 +19,13 @@ const collections = [
     img: diningCollection,
     category: "Dining",
     count: "9 pieces",
+  },
+  {
+    name: "The Media Wall",
+    description: "Fluted oak panelling, stone fireplace surrounds, and low credenzas built around your screen and storage.",
+    img: mediaCollection.url,
+    category: "TV Console",
+    count: "6 pieces",
   },
   {
     name: "The Bedroom",

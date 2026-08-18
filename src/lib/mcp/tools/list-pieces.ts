@@ -15,6 +15,12 @@ const pieces = [
   { name: "Cane-Back Dining Set", category: "Dining", price: 2200000, material: "Marble Top · Rattan Detail", dimensions: "Seats 6 · 180 × 95 cm" },
   { name: "Fluted Pedestal Dining", category: "Dining", price: 2900000, material: "Marble Oval · Fluted Base", dimensions: "Seats 6 · 200 × 100 cm" },
   { name: "Cream Oval Dining Set", category: "Dining", price: 2750000, material: "Cream Lacquer Top · Walnut Legs", dimensions: "Seats 4 · 160 × 90 cm" },
+  { name: "Fluted Oak Media Wall", category: "TV Console", price: 1850000, material: "Fluted oak panelling with a floating cabinet and concealed cable routing.", dimensions: "300 × 45 × 220 cm" },
+  { name: "Rounded Oak Credenza", category: "TV Console", price: 1250000, material: "Curved oak carcass with slatted doors and soft-close hardware.", dimensions: "220 × 45 × 55 cm" },
+  { name: "Marble Top Oval Console", category: "TV Console", price: 1450000, material: "Honed marble top over a sculpted lacquer base.", dimensions: "200 × 45 × 55 cm" },
+  { name: "Bookmatched Fireplace Wall", category: "TV Console", price: 2450000, material: "Bookmatched stone feature wall with integrated fireplace and media niche.", dimensions: "340 × 40 × 250 cm" },
+  { name: "Stone Fireplace Media Wall", category: "TV Console", price: 2250000, material: "Textured stone cladding, warm timber shelving, and hidden storage.", dimensions: "320 × 40 × 240 cm" },
+  { name: "Display Feature Wall Unit", category: "TV Console", price: 1950000, material: "Lit display niches with a low walnut console and glass vitrines.", dimensions: "300 × 45 × 240 cm" },
   { name: "Emerald Panel Bedroom", category: "Bedroom", price: 1500000, material: "Upholstered Headboard · Walnut Detail", dimensions: "Full bedroom set" },
   { name: "Minimal Panel Bedroom", category: "Bedroom", price: 1200000, material: "Floating Bed Base · Gloss Wardrobe", dimensions: "Bedroom suite" },
   { name: "Luxe Dark Panel Bedroom", category: "Bedroom", price: 1400000, material: "Integrated Lighting · Wood Panel Finish", dimensions: "Full bedroom set" },
@@ -29,7 +35,7 @@ export default defineTool({
   description: "List furniture pieces in the BespokeFurniture9ja catalog. Optionally filter by category.",
   inputSchema: {
     category: z
-      .enum(["Sofa", "Dining", "Bedroom"])
+      .enum(["Sofa", "Dining", "TV Console", "Bedroom"])
       .optional()
       .describe("Optional category filter."),
   },

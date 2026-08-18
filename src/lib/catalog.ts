@@ -20,6 +20,12 @@ import sofaIvoryCurvedLoungeSet from "@/assets/sofa-ivory-curved-lounge-set.png.
 import bedCharcoalBouclePlatform from "@/assets/bed-charcoal-boucle-platform.png.asset.json";
 import bedGreyTuftedPanel from "@/assets/bed-grey-tufted-panel.png.asset.json";
 import bedIvoryBoucleSleigh from "@/assets/bed-ivory-boucle-sleigh.png.asset.json";
+import tvFlutedOakWall from "@/assets/tv-console-fluted-oak-wall.png.asset.json";
+import tvRoundedOakCredenza from "@/assets/tv-console-rounded-oak-credenza.png.asset.json";
+import tvMarbleTopOval from "@/assets/tv-console-marble-top-oval.png.asset.json";
+import tvBookmatchedFireplaceWall from "@/assets/tv-console-bookmatched-fireplace-wall.png.asset.json";
+import tvStoneFireplaceWall from "@/assets/tv-console-stone-fireplace-wall.png.asset.json";
+import tvDisplayFeatureWall from "@/assets/tv-console-display-feature-wall.png.asset.json";
 
 export const CONSULTATION_FORM_URL = "https://forms.gle/WC1ThJ3Y6sEM6iJu9";
 
@@ -59,6 +65,12 @@ const raw: Omit<Piece, "slug">[] = [
   { name: "Cane-Back Dining Set", category: "Dining", price: 2200000, material: "Marble Top · Rattan Detail", dim: "Seats 6 · 180 × 95 cm", images: [dining6] },
   { name: "Fluted Pedestal Dining", category: "Dining", price: 2900000, material: "Marble Oval · Fluted Base", dim: "Seats 6 · 200 × 100 cm", images: [dining8] },
   { name: "Cream Oval Dining Set", category: "Dining", price: 2750000, material: "Cream Lacquer Top · Walnut Legs", dim: "Seats 4 · 160 × 90 cm", images: [diningOvalCreamSet.url] },
+  { name: "Fluted Oak Media Wall", category: "TV Console", price: 1850000, material: "Fluted oak panelling with a floating cabinet and concealed cable routing.", dim: "300 × 45 × 220 cm", images: [tvFlutedOakWall.url] },
+  { name: "Rounded Oak Credenza", category: "TV Console", price: 1250000, material: "Curved oak carcass with slatted doors and soft-close hardware.", dim: "220 × 45 × 55 cm", images: [tvRoundedOakCredenza.url] },
+  { name: "Marble Top Oval Console", category: "TV Console", price: 1450000, material: "Honed marble top over a sculpted lacquer base.", dim: "200 × 45 × 55 cm", images: [tvMarbleTopOval.url] },
+  { name: "Bookmatched Fireplace Wall", category: "TV Console", price: 2450000, material: "Bookmatched stone feature wall with integrated fireplace and media niche.", dim: "340 × 40 × 250 cm", images: [tvBookmatchedFireplaceWall.url] },
+  { name: "Stone Fireplace Media Wall", category: "TV Console", price: 2250000, material: "Textured stone cladding, warm timber shelving, and hidden storage.", dim: "320 × 40 × 240 cm", images: [tvStoneFireplaceWall.url] },
+  { name: "Display Feature Wall Unit", category: "TV Console", price: 1950000, material: "Lit display niches with a low walnut console and glass vitrines.", dim: "300 × 45 × 240 cm", images: [tvDisplayFeatureWall.url] },
   { name: "Emerald Panel Bedroom", category: "Bedroom", price: 1500000, material: "Upholstered Headboard · Walnut Detail", dim: "Full bedroom set", images: [bedroomEmeraldSuite.url] },
   { name: "Minimal Panel Bedroom", category: "Bedroom", price: 1200000, material: "Floating Bed Base · Gloss Wardrobe", dim: "Bedroom suite", images: [bedroomMinimalPanelSuite.url] },
   { name: "Luxe Dark Panel Bedroom", category: "Bedroom", price: 1400000, material: "Integrated Lighting · Wood Panel Finish", dim: "Full bedroom set", images: [bedroomLuxeDarkPanelSuite.url] },
