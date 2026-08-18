@@ -10,6 +10,7 @@ import dining4 from "@/assets/dining-4.png";
 import dining5 from "@/assets/dining-5.png";
 import dining6 from "@/assets/dining-6.png";
 import dining8 from "@/assets/dining-8.png";
+import diningOvalCreamSet from "@/assets/dining-oval-cream-set.png.asset.json";
 import sofaSetBestseller from "@/assets/sofa-set-bestseller.jpg";
 import diningSetBestseller from "@/assets/dining-set-bestseller.jpg";
 import bedroomEmeraldSuite from "@/assets/bedroom-emerald-suite.png.asset.json";
