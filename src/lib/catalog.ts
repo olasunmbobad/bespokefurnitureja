@@ -34,6 +34,8 @@ import sofaHoneySerpentine from "@/assets/sofa-honey-curved-serpentine.png.asset
 import sofaTealVelvetSet from "@/assets/sofa-teal-velvet-tufted-set.png.asset.json";
 import sofaPearlCorner from "@/assets/sofa-pearl-corner-sectional.png.asset.json";
 import sofaCharcoalModular from "@/assets/sofa-charcoal-modular-lounger.png.asset.json";
+import sofaIvoryChannelTufted from "@/assets/ivory-channel-tufted-sectional.png.asset.json";
+import sofaDoveGreyModular from "@/assets/dove-grey-modular-sectional.png.asset.json";
 
 export const CONSULTATION_FORM_URL = "https://forms.gle/WC1ThJ3Y6sEM6iJu9";
 
@@ -87,6 +89,8 @@ const raw: Omit<Piece, "slug">[] = [
   { name: "Teal Velvet Tufted Set", category: "Sofa", price: 2050000, material: "Grid-tufted teal velvet with slim tapered legs.", dim: "3+1+1 seater", images: [sofaTealVelvetSet.url] },
   { name: "Pearl Corner Sectional", category: "Sofa", price: 2600000, material: "Pearl linen corner sectional with a built-in timber serving tray.", dim: "L-shape · Custom", images: [sofaPearlCorner.url] },
   { name: "Charcoal Modular Lounger", category: "Sofa", price: 2150000, material: "Low-slung charcoal modules with adjustable headrests and a chaise.", dim: "Modular · Custom", images: [sofaCharcoalModular.url] },
+  { name: "Ivory Channel Tufted Sectional", category: "Sofa", price: 2650000, material: "Channel-tufted ivory bouclé wrapping a generous U-shaped sectional with deep seating and soft cushions.", dim: "U-shape · Custom", images: [sofaIvoryChannelTufted.url] },
+  { name: "Dove Grey Modular Sectional", category: "Sofa", price: 2450000, material: "Soft dove grey upholstery with contrast black accent pillows and clean modern lines.", dim: "L-shape · Custom", images: [sofaDoveGreyModular.url] },
   { name: "Emerald Panel Bedroom", category: "Bedroom", price: 1500000, material: "Upholstered Headboard · Walnut Detail", dim: "Full bedroom set", images: [bedroomEmeraldSuite.url] },
   { name: "Minimal Panel Bedroom", category: "Bedroom", price: 1200000, material: "Floating Bed Base · Gloss Wardrobe", dim: "Bedroom suite", images: [bedroomMinimalPanelSuite.url] },
   { name: "Luxe Dark Panel Bedroom", category: "Bedroom", price: 1400000, material: "Integrated Lighting · Wood Panel Finish", dim: "Full bedroom set", images: [bedroomLuxeDarkPanelSuite.url] },
