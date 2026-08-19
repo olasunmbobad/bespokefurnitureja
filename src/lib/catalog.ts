@@ -36,6 +36,8 @@ import sofaPearlCorner from "@/assets/sofa-pearl-corner-sectional.png.asset.json
 import sofaCharcoalModular from "@/assets/sofa-charcoal-modular-lounger.png.asset.json";
 import sofaIvoryChannelTufted from "@/assets/ivory-channel-tufted-sectional.png.asset.json";
 import sofaDoveGreyModular from "@/assets/dove-grey-modular-sectional.png.asset.json";
+import sofaCharcoalModularAlt from "@/assets/charcoal-modular-lounger-alt.png.asset.json";
+import bedCharcoalBoucleAlt from "@/assets/charcoal-boucle-bed-frame-alt.png.asset.json";
 
 export const CONSULTATION_FORM_URL = "https://forms.gle/WC1ThJ3Y6sEM6iJu9";
 
@@ -88,13 +90,13 @@ const raw: Omit<Piece, "slug">[] = [
   { name: "Honey Serpentine Sofa", category: "Sofa", price: 2200000, material: "Sculpted serpentine form in honey chenille on a hardwood frame.", dim: "320 × 100 × 75 cm", images: [sofaHoneySerpentine.url] },
   { name: "Teal Velvet Tufted Set", category: "Sofa", price: 2050000, material: "Grid-tufted teal velvet with slim tapered legs.", dim: "3+1+1 seater", images: [sofaTealVelvetSet.url] },
   { name: "Pearl Corner Sectional", category: "Sofa", price: 2600000, material: "Pearl linen corner sectional with a built-in timber serving tray.", dim: "L-shape · Custom", images: [sofaPearlCorner.url] },
-  { name: "Charcoal Modular Lounger", category: "Sofa", price: 2150000, material: "Low-slung charcoal modules with adjustable headrests and a chaise.", dim: "Modular · Custom", images: [sofaCharcoalModular.url] },
+  { name: "Charcoal Modular Lounger", category: "Sofa", price: 2150000, material: "Low-slung charcoal modules with adjustable headrests and a chaise.", dim: "Modular · Custom", images: [sofaCharcoalModular.url, sofaCharcoalModularAlt.url] },
   { name: "Ivory Channel Tufted Sectional", category: "Sofa", price: 2650000, material: "Channel-tufted ivory bouclé wrapping a generous U-shaped sectional with deep seating and soft cushions.", dim: "U-shape · Custom", images: [sofaIvoryChannelTufted.url] },
   { name: "Dove Grey Modular Sectional", category: "Sofa", price: 2450000, material: "Soft dove grey upholstery with contrast black accent pillows and clean modern lines.", dim: "L-shape · Custom", images: [sofaDoveGreyModular.url] },
   { name: "Emerald Panel Bedroom", category: "Bedroom", price: 1500000, material: "Upholstered Headboard · Walnut Detail", dim: "Full bedroom set", images: [bedroomEmeraldSuite.url] },
   { name: "Minimal Panel Bedroom", category: "Bedroom", price: 1200000, material: "Floating Bed Base · Gloss Wardrobe", dim: "Bedroom suite", images: [bedroomMinimalPanelSuite.url] },
   { name: "Luxe Dark Panel Bedroom", category: "Bedroom", price: 1400000, material: "Integrated Lighting · Wood Panel Finish", dim: "Full bedroom set", images: [bedroomLuxeDarkPanelSuite.url] },
-  { name: "Charcoal Bouclé Bed Frame", category: "Bedroom", price: 950000, material: "Channel-tufted charcoal bouclé over a solid hardwood frame, with a low platform base and softly rounded footboard. Built for a grounded, hotel-suite calm.", dim: "King · Custom sizes", images: [bedCharcoalBouclePlatform.url] },
+  { name: "Charcoal Bouclé Bed Frame", category: "Bedroom", price: 950000, material: "Channel-tufted charcoal bouclé over a solid hardwood frame, with a low platform base and softly rounded footboard. Built for a grounded, hotel-suite calm.", dim: "King · Custom sizes", images: [bedCharcoalBouclePlatform.url, bedCharcoalBoucleAlt.url] },
   { name: "Grey Tufted Panel Bed Frame", category: "Bedroom", price: 850000, material: "A tall diamond-tufted headboard in dove grey upholstery, hand-stitched onto a seasoned hardwood carcass. Classic proportions with a quiet, modern finish.", dim: "King · Custom sizes", images: [bedGreyTuftedPanel.url] },
   { name: "Ivory Bouclé Sleigh Bed Frame", category: "Bedroom", price: 1100000, material: "Curved ivory bouclé wraps a sculpted sleigh silhouette built on kiln-dried hardwood. Generous scroll ends give the frame its soft, enveloping shape.", dim: "King · Custom sizes", images: [bedIvoryBoucleSleigh.url] },
 ];
