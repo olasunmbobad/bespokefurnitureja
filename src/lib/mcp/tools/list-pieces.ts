@@ -29,6 +29,8 @@ const pieces = [
   { name: "Teal Velvet Tufted Set", category: "Sofa", price: 2050000, material: "Grid-tufted teal velvet with slim tapered legs.", dimensions: "3+1+1 seater" },
   { name: "Pearl Corner Sectional", category: "Sofa", price: 2600000, material: "Pearl linen corner sectional with a built-in timber serving tray.", dimensions: "L-shape · Custom" },
   { name: "Charcoal Modular Lounger", category: "Sofa", price: 2150000, material: "Low-slung charcoal modules with adjustable headrests and a chaise.", dimensions: "Modular · Custom" },
+  { name: "Ivory Channel Tufted Sectional", category: "Sofa", price: 2650000, material: "Channel-tufted ivory bouclé wrapping a generous U-shaped sectional with deep seating and soft cushions.", dimensions: "U-shape · Custom" },
+  { name: "Dove Grey Modular Sectional", category: "Sofa", price: 2450000, material: "Soft dove grey upholstery with contrast black accent pillows and clean modern lines.", dimensions: "L-shape · Custom" },
   { name: "Emerald Panel Bedroom", category: "Bedroom", price: 1500000, material: "Upholstered Headboard · Walnut Detail", dimensions: "Full bedroom set" },
   { name: "Minimal Panel Bedroom", category: "Bedroom", price: 1200000, material: "Floating Bed Base · Gloss Wardrobe", dimensions: "Bedroom suite" },
   { name: "Luxe Dark Panel Bedroom", category: "Bedroom", price: 1400000, material: "Integrated Lighting · Wood Panel Finish", dimensions: "Full bedroom set" },
