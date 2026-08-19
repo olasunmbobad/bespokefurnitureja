@@ -26,6 +26,14 @@ import tvMarbleTopOval from "@/assets/tv-console-marble-top-oval.png.asset.json"
 import tvBookmatchedFireplaceWall from "@/assets/tv-console-bookmatched-fireplace-wall.png.asset.json";
 import tvStoneFireplaceWall from "@/assets/tv-console-stone-fireplace-wall.png.asset.json";
 import tvDisplayFeatureWall from "@/assets/tv-console-display-feature-wall.png.asset.json";
+import tvMarbleWoodMediaWall from "@/assets/tv-console-marble-wood-media-wall.png.asset.json";
+import sofaGreyBoucleLoungeSet from "@/assets/sofa-grey-boucle-lounge-set.png.asset.json";
+import sofaGreyTuftedModular from "@/assets/sofa-grey-tufted-modular-sectional.png.asset.json";
+import sofaIvoryCrescent from "@/assets/sofa-ivory-curved-crescent-sectional.png.asset.json";
+import sofaHoneySerpentine from "@/assets/sofa-honey-curved-serpentine.png.asset.json";
+import sofaTealVelvetSet from "@/assets/sofa-teal-velvet-tufted-set.png.asset.json";
+import sofaPearlCorner from "@/assets/sofa-pearl-corner-sectional.png.asset.json";
+import sofaCharcoalModular from "@/assets/sofa-charcoal-modular-lounger.png.asset.json";
 
 export const CONSULTATION_FORM_URL = "https://forms.gle/WC1ThJ3Y6sEM6iJu9";
 
