@@ -44,6 +44,7 @@ import sofaGraphiteLounge from "@/assets/sofa-graphite-lounge-modular.png.asset.
 import sofaSilverPiped from "@/assets/sofa-silver-piped-sofa-set.png.asset.json";
 import sofaSlateChenille from "@/assets/sofa-slate-chenille-corner-sectional.png.asset.json";
 import diningWalnutPedestal from "@/assets/dining-walnut-pedestal-set.png.asset.json";
+import sofaGreenVelvetModular from "@/assets/sofa-green-velvet-modular-sectional.png.asset.json";
 
 export const CONSULTATION_FORM_URL = "https://forms.gle/WC1ThJ3Y6sEM6iJu9";
 
