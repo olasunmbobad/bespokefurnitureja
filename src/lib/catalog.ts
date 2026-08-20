@@ -38,6 +38,12 @@ import sofaIvoryChannelTufted from "@/assets/ivory-channel-tufted-sectional.png.
 import sofaDoveGreyModular from "@/assets/dove-grey-modular-sectional.png.asset.json";
 import sofaCharcoalModularAlt from "@/assets/charcoal-modular-lounger-alt.png.asset.json";
 import bedCharcoalBoucleAlt from "@/assets/charcoal-boucle-bed-frame-alt.png.asset.json";
+import sofaSandTuftedCorner from "@/assets/sofa-sand-tufted-corner-sectional.png.asset.json";
+import sofaIvoryCurvedSuite from "@/assets/sofa-ivory-curved-sectional-suite.png.asset.json";
+import sofaGraphiteLounge from "@/assets/sofa-graphite-lounge-modular.png.asset.json";
+import sofaSilverPiped from "@/assets/sofa-silver-piped-sofa-set.png.asset.json";
+import sofaSlateChenille from "@/assets/sofa-slate-chenille-corner-sectional.png.asset.json";
+import diningWalnutPedestal from "@/assets/dining-walnut-pedestal-set.png.asset.json";
 
 export const CONSULTATION_FORM_URL = "https://forms.gle/WC1ThJ3Y6sEM6iJu9";
 
