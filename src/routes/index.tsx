@@ -147,8 +147,8 @@ function HomePage() {
             </div>
 
             <div className="mt-12 grid grid-cols-3 gap-8 max-w-md">
-              <Stat value="89.5K" label="Instagram family" />
-              <Stat value="1,700+" label="Pieces shared" />
+              <Stat value="95K" label="Instagram family" />
+              <Stat value="2,000+" label="Pieces shared" />
               <Stat value="36" label="States delivered" />
             </div>
           </div>
