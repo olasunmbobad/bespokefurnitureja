@@ -2,7 +2,6 @@ import gallery1 from "@/assets/gallery-1.png";
 import gallery2 from "@/assets/gallery-2.png";
 import gallery3 from "@/assets/gallery-3.png";
 import gallery4 from "@/assets/gallery-4.png";
-import gallery5 from "@/assets/gallery-5.png";
 import dining1 from "@/assets/dining-1.png";
 import dining2 from "@/assets/dining-2.png";
 import dining3 from "@/assets/dining-3.png";
@@ -27,9 +26,6 @@ import tvBookmatchedFireplaceWall from "@/assets/tv-console-bookmatched-fireplac
 import tvStoneFireplaceWall from "@/assets/tv-console-stone-fireplace-wall.png.asset.json";
 import tvDisplayFeatureWall from "@/assets/tv-console-display-feature-wall.png.asset.json";
 import tvMarbleWoodMediaWall from "@/assets/tv-console-marble-wood-media-wall.png.asset.json";
-import sofaGreyBoucleLoungeSet from "@/assets/sofa-grey-boucle-lounge-set.png.asset.json";
-import sofaGreyTuftedModular from "@/assets/sofa-grey-tufted-modular-sectional.png.asset.json";
-import sofaIvoryCrescent from "@/assets/sofa-ivory-curved-crescent-sectional.png.asset.json";
 import sofaHoneySerpentine from "@/assets/sofa-honey-curved-serpentine.png.asset.json";
 import sofaTealVelvetSet from "@/assets/sofa-teal-velvet-tufted-set.png.asset.json";
 import sofaPearlCorner from "@/assets/sofa-pearl-corner-sectional.png.asset.json";
