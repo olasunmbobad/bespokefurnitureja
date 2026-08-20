@@ -36,6 +36,7 @@ const pieces = [
   { name: "Graphite Lounge Modular Set", category: "Sofa", price: 2350000, material: "Low-profile graphite modules with a slim marble side console and chaise end.", dimensions: "Modular · Custom" },
   { name: "Silver Piped Sofa Set", category: "Sofa", price: 2250000, material: "Silver-grey chenille with contrast black piping on blackened timber plinths.", dimensions: "3+2+1 seater" },
   { name: "Slate Chenille Corner Sectional", category: "Sofa", price: 2550000, material: "Plush slate chenille sectional with a built-in timber serving ledge and deep chaise.", dimensions: "L-shape · Custom" },
+  { name: "Moss Velvet Modular Sectional", category: "Sofa", price: 2600000, material: "Rich moss velvet modular sectional with a matching ottoman and deep, relaxed seating.", dimensions: "L-shape · Custom" },
   { name: "Walnut Pedestal Dining Set", category: "Dining", price: 2850000, material: "Solid walnut pedestal table with upholstered dining chairs.", dimensions: "Seats 6 · 200 × 100 cm" },
   { name: "Emerald Panel Bedroom", category: "Bedroom", price: 1500000, material: "Upholstered Headboard · Walnut Detail", dimensions: "Full bedroom set" },
   { name: "Minimal Panel Bedroom", category: "Bedroom", price: 1200000, material: "Floating Bed Base · Gloss Wardrobe", dimensions: "Bedroom suite" },

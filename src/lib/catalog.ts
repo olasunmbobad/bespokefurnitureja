@@ -44,6 +44,7 @@ import sofaGraphiteLounge from "@/assets/sofa-graphite-lounge-modular.png.asset.
 import sofaSilverPiped from "@/assets/sofa-silver-piped-sofa-set.png.asset.json";
 import sofaSlateChenille from "@/assets/sofa-slate-chenille-corner-sectional.png.asset.json";
 import diningWalnutPedestal from "@/assets/dining-walnut-pedestal-set.png.asset.json";
+import sofaGreenVelvetModular from "@/assets/sofa-green-velvet-modular-sectional.png.asset.json";
 
 export const CONSULTATION_FORM_URL = "https://forms.gle/WC1ThJ3Y6sEM6iJu9";
 
@@ -104,6 +105,7 @@ const raw: Omit<Piece, "slug">[] = [
   { name: "Graphite Lounge Modular Set", category: "Sofa", price: 2350000, material: "Low-profile graphite modules with a slim marble side console and chaise end.", dim: "Modular · Custom", images: [sofaGraphiteLounge.url] },
   { name: "Silver Piped Sofa Set", category: "Sofa", price: 2250000, material: "Silver-grey chenille with contrast black piping on blackened timber plinths.", dim: "3+2+1 seater", images: [sofaSilverPiped.url] },
   { name: "Slate Chenille Corner Sectional", category: "Sofa", price: 2550000, material: "Plush slate chenille sectional with a built-in timber serving ledge and deep chaise.", dim: "L-shape · Custom", images: [sofaSlateChenille.url] },
+  { name: "Moss Velvet Modular Sectional", category: "Sofa", price: 2600000, material: "Rich moss velvet modular sectional with a matching ottoman and deep, relaxed seating.", dim: "L-shape · Custom", images: [sofaGreenVelvetModular.url] },
   { name: "Walnut Pedestal Dining Set", category: "Dining", price: 2850000, material: "Solid walnut pedestal table with upholstered dining chairs.", dim: "Seats 6 · 200 × 100 cm", images: [diningWalnutPedestal.url] },
   { name: "Emerald Panel Bedroom", category: "Bedroom", price: 1500000, material: "Upholstered Headboard · Walnut Detail", dim: "Full bedroom set", images: [bedroomEmeraldSuite.url] },
   { name: "Minimal Panel Bedroom", category: "Bedroom", price: 1200000, material: "Floating Bed Base · Gloss Wardrobe", dim: "Bedroom suite", images: [bedroomMinimalPanelSuite.url] },
