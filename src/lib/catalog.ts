@@ -45,6 +45,15 @@ import sofaSilverPiped from "@/assets/sofa-silver-piped-sofa-set.png.asset.json"
 import sofaSlateChenille from "@/assets/sofa-slate-chenille-corner-sectional.png.asset.json";
 import diningWalnutPedestal from "@/assets/dining-walnut-pedestal-set.png.asset.json";
 import sofaGreenVelvetModular from "@/assets/sofa-green-velvet-modular-sectional.png.asset.json";
+import sofaAssign54 from "@/assets/sofa-assign-54.png.asset.json";
+import sofaAssign55 from "@/assets/sofa-assign-55.png.asset.json";
+import sofaAssign56 from "@/assets/sofa-assign-56.png.asset.json";
+import sofaAssign57 from "@/assets/sofa-assign-57.png.asset.json";
+import sofaAssign58 from "@/assets/sofa-assign-58.png.asset.json";
+import sofaAssign59 from "@/assets/sofa-assign-59.png.asset.json";
+import sofaAssign60 from "@/assets/sofa-assign-60.png.asset.json";
+import sofaAssign61 from "@/assets/sofa-assign-61.png.asset.json";
+import sofaAssign62 from "@/assets/sofa-assign-62.png.asset.json";
 
 export const CONSULTATION_FORM_URL = "https://forms.gle/WC1ThJ3Y6sEM6iJu9";
 
