@@ -2,7 +2,6 @@ import gallery1 from "@/assets/gallery-1.png";
 import gallery2 from "@/assets/gallery-2.png";
 import gallery3 from "@/assets/gallery-3.png";
 import gallery4 from "@/assets/gallery-4.png";
-import gallery5 from "@/assets/gallery-5.png";
 import dining1 from "@/assets/dining-1.png";
 import dining2 from "@/assets/dining-2.png";
 import dining3 from "@/assets/dining-3.png";
@@ -27,9 +26,6 @@ import tvBookmatchedFireplaceWall from "@/assets/tv-console-bookmatched-fireplac
 import tvStoneFireplaceWall from "@/assets/tv-console-stone-fireplace-wall.png.asset.json";
 import tvDisplayFeatureWall from "@/assets/tv-console-display-feature-wall.png.asset.json";
 import tvMarbleWoodMediaWall from "@/assets/tv-console-marble-wood-media-wall.png.asset.json";
-import sofaGreyBoucleLoungeSet from "@/assets/sofa-grey-boucle-lounge-set.png.asset.json";
-import sofaGreyTuftedModular from "@/assets/sofa-grey-tufted-modular-sectional.png.asset.json";
-import sofaIvoryCrescent from "@/assets/sofa-ivory-curved-crescent-sectional.png.asset.json";
 import sofaHoneySerpentine from "@/assets/sofa-honey-curved-serpentine.png.asset.json";
 import sofaTealVelvetSet from "@/assets/sofa-teal-velvet-tufted-set.png.asset.json";
 import sofaPearlCorner from "@/assets/sofa-pearl-corner-sectional.png.asset.json";
@@ -45,6 +41,15 @@ import sofaSilverPiped from "@/assets/sofa-silver-piped-sofa-set.png.asset.json"
 import sofaSlateChenille from "@/assets/sofa-slate-chenille-corner-sectional.png.asset.json";
 import diningWalnutPedestal from "@/assets/dining-walnut-pedestal-set.png.asset.json";
 import sofaGreenVelvetModular from "@/assets/sofa-green-velvet-modular-sectional.png.asset.json";
+import sofaAssign54 from "@/assets/sofa-assign-54.png.asset.json";
+import sofaAssign55 from "@/assets/sofa-assign-55.png.asset.json";
+import sofaAssign56 from "@/assets/sofa-assign-56.png.asset.json";
+import sofaAssign57 from "@/assets/sofa-assign-57.png.asset.json";
+import sofaAssign58 from "@/assets/sofa-assign-58.png.asset.json";
+import sofaAssign59 from "@/assets/sofa-assign-59.png.asset.json";
+import sofaAssign60 from "@/assets/sofa-assign-60.png.asset.json";
+import sofaAssign61 from "@/assets/sofa-assign-61.png.asset.json";
+import sofaAssign62 from "@/assets/sofa-assign-62.png.asset.json";
 
 export const CONSULTATION_FORM_URL = "https://forms.gle/WC1ThJ3Y6sEM6iJu9";
 
@@ -74,7 +79,7 @@ const raw: Omit<Piece, "slug">[] = [
   { name: "Cloud Curve Sofa", category: "Sofa", price: 2200000, material: "Charcoal Linen · Sculpted Form", dim: "260 × 100 × 85 cm", images: [gallery2] },
   { name: "Signature Line Sofa Set", category: "Sofa", price: 2500000, material: "Hand-printed Bouclé", dim: "Set of 3 · Custom", images: [gallery3] },
   { name: "Velvet Sculptural Suite", category: "Sofa", price: 2400000, material: "Mocha Velvet · Plinth Base", dim: "Modular suite", images: [gallery4] },
-  { name: "Monochrome Living Set", category: "Sofa", price: 2100000, material: "Cream Linen · Piped Detail", dim: "3+2+1 seater", images: [gallery5] },
+  { name: "Monochrome Living Set", category: "Sofa", price: 2100000, material: "Cream Linen · Piped Detail", dim: "3+2+1 seater", images: [sofaAssign54.url, sofaAssign55.url, sofaAssign56.url, sofaAssign57.url] },
   { name: "Ivory Curved Lounge Set", category: "Sofa", price: 2300000, material: "Textured Ivory Upholstery · Sculpted Accent Chairs", dim: "3 seater + 2 lounge chairs", images: [sofaIvoryCurvedLoungeSet.url] },
   { name: "Onyx Marble Dining Table", category: "Dining", price: 3000000, material: "Walnut Base · Bouclé Armchairs", dim: "Seats 8 · 240 × 110 cm", images: [dining1] },
   { name: "Arched Oval Dining Set", category: "Dining", price: 2800000, material: "Pearl Marble · Sculpted Bouclé", dim: "Seats 6 · 220 × 100 cm", images: [dining2] },
@@ -91,9 +96,9 @@ const raw: Omit<Piece, "slug">[] = [
   { name: "Stone Fireplace Media Wall", category: "TV Console", price: 2250000, material: "Textured stone cladding, warm timber shelving, and hidden storage.", dim: "320 × 40 × 240 cm", images: [tvStoneFireplaceWall.url] },
   { name: "Display Feature Wall Unit", category: "TV Console", price: 1950000, material: "Lit display niches with a low walnut console and glass vitrines.", dim: "300 × 45 × 240 cm", images: [tvDisplayFeatureWall.url] },
   { name: "Marble & Wood Media Wall", category: "TV Console", price: 2650000, material: "Bookmatched marble panelling with warm timber fluting, backlit niches, and a gloss floating console.", dim: "360 × 45 × 260 cm", images: [tvMarbleWoodMediaWall.url] },
-  { name: "Grey Bouclé Lounge Set", category: "Sofa", price: 2350000, material: "Plump grey bouclé modules with an integrated timber side tray.", dim: "3 seater + lounge chair", images: [sofaGreyBoucleLoungeSet.url] },
-  { name: "Grey Tufted Modular Sectional", category: "Sofa", price: 2450000, material: "Deep-tufted grey velvet modules with a matching oversized ottoman.", dim: "L-shape · Custom", images: [sofaGreyTuftedModular.url] },
-  { name: "Ivory Crescent Sectional", category: "Sofa", price: 2900000, material: "Curved ivory upholstery wrapping a walnut crescent table.", dim: "Curved · Custom", images: [sofaIvoryCrescent.url] },
+  { name: "Grey Bouclé Lounge Set", category: "Sofa", price: 2350000, material: "Plump grey bouclé modules with an integrated timber side tray.", dim: "3 seater + lounge chair", images: [sofaAssign58.url] },
+  { name: "Grey Tufted Modular Sectional", category: "Sofa", price: 2450000, material: "Deep-tufted grey velvet modules with a matching oversized ottoman.", dim: "L-shape · Custom", images: [sofaAssign59.url, sofaAssign60.url] },
+  { name: "Ivory Crescent Sectional", category: "Sofa", price: 2900000, material: "Curved ivory upholstery wrapping a walnut crescent table.", dim: "Curved · Custom", images: [sofaAssign61.url, sofaAssign62.url] },
   { name: "Honey Serpentine Sofa", category: "Sofa", price: 2200000, material: "Sculpted serpentine form in honey chenille on a hardwood frame.", dim: "320 × 100 × 75 cm", images: [sofaHoneySerpentine.url] },
   { name: "Teal Velvet Tufted Set", category: "Sofa", price: 2050000, material: "Grid-tufted teal velvet with slim tapered legs.", dim: "3+1+1 seater", images: [sofaTealVelvetSet.url] },
   { name: "Pearl Corner Sectional", category: "Sofa", price: 2600000, material: "Pearl linen corner sectional with a built-in timber serving tray.", dim: "L-shape · Custom", images: [sofaPearlCorner.url] },
