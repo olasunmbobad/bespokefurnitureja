@@ -38,6 +38,12 @@ import sofaIvoryChannelTufted from "@/assets/ivory-channel-tufted-sectional.png.
 import sofaDoveGreyModular from "@/assets/dove-grey-modular-sectional.png.asset.json";
 import sofaCharcoalModularAlt from "@/assets/charcoal-modular-lounger-alt.png.asset.json";
 import bedCharcoalBoucleAlt from "@/assets/charcoal-boucle-bed-frame-alt.png.asset.json";
+import sofaSandTuftedCorner from "@/assets/sofa-sand-tufted-corner-sectional.png.asset.json";
+import sofaIvoryCurvedSuite from "@/assets/sofa-ivory-curved-sectional-suite.png.asset.json";
+import sofaGraphiteLounge from "@/assets/sofa-graphite-lounge-modular.png.asset.json";
+import sofaSilverPiped from "@/assets/sofa-silver-piped-sofa-set.png.asset.json";
+import sofaSlateChenille from "@/assets/sofa-slate-chenille-corner-sectional.png.asset.json";
+import diningWalnutPedestal from "@/assets/dining-walnut-pedestal-set.png.asset.json";
 
 export const CONSULTATION_FORM_URL = "https://forms.gle/WC1ThJ3Y6sEM6iJu9";
 
@@ -93,6 +99,12 @@ const raw: Omit<Piece, "slug">[] = [
   { name: "Charcoal Modular Lounger", category: "Sofa", price: 2150000, material: "Low-slung charcoal modules with adjustable headrests and a chaise.", dim: "Modular · Custom", images: [sofaCharcoalModular.url, sofaCharcoalModularAlt.url] },
   { name: "Ivory Channel Tufted Sectional", category: "Sofa", price: 2650000, material: "Channel-tufted ivory bouclé wrapping a generous U-shaped sectional with deep seating and soft cushions.", dim: "U-shape · Custom", images: [sofaIvoryChannelTufted.url] },
   { name: "Dove Grey Modular Sectional", category: "Sofa", price: 2450000, material: "Soft dove grey upholstery with contrast black accent pillows and clean modern lines.", dim: "L-shape · Custom", images: [sofaDoveGreyModular.url] },
+  { name: "Sand Tufted Corner Sectional", category: "Sofa", price: 2700000, material: "Grid-tufted sand chenille in a generous corner run, paired with a sculpted marble-top table.", dim: "L-shape · Custom", images: [sofaSandTuftedCorner.url] },
+  { name: "Ivory Curved Sectional Suite", category: "Sofa", price: 2850000, material: "Sweeping ivory curved sectional with matching swivel lounge chairs.", dim: "Curved · Custom", images: [sofaIvoryCurvedSuite.url] },
+  { name: "Graphite Lounge Modular Set", category: "Sofa", price: 2350000, material: "Low-profile graphite modules with a slim marble side console and chaise end.", dim: "Modular · Custom", images: [sofaGraphiteLounge.url] },
+  { name: "Silver Piped Sofa Set", category: "Sofa", price: 2250000, material: "Silver-grey chenille with contrast black piping on blackened timber plinths.", dim: "3+2+1 seater", images: [sofaSilverPiped.url] },
+  { name: "Slate Chenille Corner Sectional", category: "Sofa", price: 2550000, material: "Plush slate chenille sectional with a built-in timber serving ledge and deep chaise.", dim: "L-shape · Custom", images: [sofaSlateChenille.url] },
+  { name: "Walnut Pedestal Dining Set", category: "Dining", price: 2850000, material: "Solid walnut pedestal table with upholstered dining chairs.", dim: "Seats 6 · 200 × 100 cm", images: [diningWalnutPedestal.url] },
   { name: "Emerald Panel Bedroom", category: "Bedroom", price: 1500000, material: "Upholstered Headboard · Walnut Detail", dim: "Full bedroom set", images: [bedroomEmeraldSuite.url] },
   { name: "Minimal Panel Bedroom", category: "Bedroom", price: 1200000, material: "Floating Bed Base · Gloss Wardrobe", dim: "Bedroom suite", images: [bedroomMinimalPanelSuite.url] },
   { name: "Luxe Dark Panel Bedroom", category: "Bedroom", price: 1400000, material: "Integrated Lighting · Wood Panel Finish", dim: "Full bedroom set", images: [bedroomLuxeDarkPanelSuite.url] },
