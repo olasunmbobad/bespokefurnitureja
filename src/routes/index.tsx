@@ -51,7 +51,7 @@ function HomePage() {
       </section>
 
       {/* Primary CTA */}
-      <section className="px-6 md:px-10 pb-24 md:pb-32">
+      <section className="block px-6 md:px-10 pb-24 md:pb-32">
         <div className="max-w-4xl mx-auto text-center bg-moss/5 border border-forest/10 rounded-sm px-6 py-14 md:px-12 md:py-16">
           <p className="text-lg md:text-2xl text-forest/75 leading-relaxed max-w-2xl mx-auto mb-8">
             Tell us about your vision, and we'll create something uniquely yours.
