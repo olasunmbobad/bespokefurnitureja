@@ -1,10 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider } from '@tanstack/react-router'
-import { createRouter } from './router'
+import { router } from './router'
 import './styles.css'
-
-const router = createRouter()
 
 const rootElement = document.getElementById('root')!
 
