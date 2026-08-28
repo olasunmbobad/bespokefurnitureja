@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   build: {
     rollupOptions: {
-      external: ['cloudflare:workers'],
+      external: ['cloudflare:workers', 'node:async_hooks'],
     },
   },
 });
