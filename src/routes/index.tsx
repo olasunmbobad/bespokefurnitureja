@@ -5,7 +5,7 @@ import { HeroCarousel } from "@/components/HeroCarousel";
 import { CategoryShowcase } from "@/components/CategoryShowcase";
 import { CollectionsShowcase } from "@/components/CollectionsShowcase";
 
-import ceoPortrait from "@/assets/ceo-portrait.jpg";
+const ceoPortrait = "/images/ceo-portrait.jpg";
 import { getPiece, formatPrice } from "@/lib/catalog";
 
 export const Route = createFileRoute("/")({

@@ -1,9 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import livingCollection from "@/assets/gallery-1.png";
-import diningCollection from "@/assets/dining-1.png";
-import bedroomCollection from "@/assets/bedroom-emerald-suite.png.asset.json";
-import mediaCollection from "@/assets/tv-console-fluted-oak-wall.png.asset.json";
-import bespokeCollection from "@/assets/craft-hands.jpg";
+const livingCollection = "/images/gallery-1.jpg";
+const diningCollection = "/images/dining-1.jpg";
+const bedroomCollection = "/images/bedroom-emerald-suite.jpg";
+const mediaCollection = "/images/tv-console-fluted-oak-wall.jpg";
+const bespokeCollection = "/images/craft-hands.jpg";
 
 const collections = [
   {
@@ -23,14 +23,14 @@ const collections = [
   {
     name: "The Media Wall",
     description: "Fluted oak panelling, stone fireplace surrounds, and low credenzas built around your screen and storage.",
-    img: mediaCollection.url,
+    img: mediaCollection,
     category: "TV Console",
     count: "6 pieces",
   },
   {
     name: "The Bedroom",
     description: "Panel beds and suites finished in walnut, emerald upholstery, and integrated lighting for restful sanctuaries.",
-    img: bedroomCollection.url,
+    img: bedroomCollection,
     category: "Bedroom",
     count: "6 pieces",
   },
