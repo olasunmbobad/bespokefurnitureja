@@ -19,7 +19,7 @@ export const Route = createFileRoute("/collections")({
   component: CollectionsPage,
 });
 
-const categories = ["All", "Sofa", "Dining", "TV Console", "Bedroom", "Bespoke"];
+const categories = ["All", "Sofa", "Dining", "TV Console", "Bedroom"];
 
 function CollectionsPage() {
   const search = useSearch({ from: "/collections" });
