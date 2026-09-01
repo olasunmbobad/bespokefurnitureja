@@ -1,23 +1,23 @@
 import { useEffect, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import sofaSetBestseller from "@/assets/sofa-set-bestseller.jpg";
-import diningSetBestseller from "@/assets/dining-set-bestseller.jpg";
-import bedroomEmeraldSuite from "@/assets/bedroom-emerald-suite.png.asset.json";
-import sofaIvory from "@/assets/sofa-ivory-curved-lounge-set.png.asset.json";
-import bedroomLuxe from "@/assets/bedroom-luxe-dark-panel-suite.png.asset.json";
-import bedCharcoal from "@/assets/bed-charcoal-boucle-platform.png.asset.json";
-import bedGrey from "@/assets/bed-grey-tufted-panel.png.asset.json";
-import bedIvory from "@/assets/bed-ivory-boucle-sleigh.png.asset.json";
+const sofaSetBestseller = "/images/sofa-set-bestseller.jpg";
+const diningSetBestseller = "/images/dining-set-bestseller.jpg";
+const bedroomEmeraldSuite = "/images/bedroom-emerald-suite.jpg";
+const sofaIvory = "/images/sofa-ivory-curved-lounge-set.jpg";
+const bedroomLuxe = "/images/bedroom-luxe-dark-panel-suite.jpg";
+const bedCharcoal = "/images/bed-charcoal-boucle-platform.jpg";
+const bedGrey = "/images/bed-grey-tufted-panel.jpg";
+const bedIvory = "/images/bed-ivory-boucle-sleigh.jpg";
 
 const slides = [
-  { name: "Ivory Curved Lounge Set", category: "Sofa", img: sofaIvory.url },
+  { name: "Ivory Curved Lounge Set", category: "Sofa", img: sofaIvory },
   { name: "Heritage Dining Set", category: "Dining", img: diningSetBestseller },
-  { name: "Emerald Bedroom Suite", category: "Bedroom", img: bedroomEmeraldSuite.url },
+  { name: "Emerald Bedroom Suite", category: "Bedroom", img: bedroomEmeraldSuite },
   { name: "Bouclé Sofa Set", category: "Sofa", img: sofaSetBestseller },
-  { name: "Luxe Panel Bedroom", category: "Bedroom", img: bedroomLuxe.url },
-  { name: "Charcoal Bouclé Bed Frame", category: "Bedroom", img: bedCharcoal.url },
-  { name: "Grey Tufted Panel Bed Frame", category: "Bedroom", img: bedGrey.url },
-  { name: "Ivory Bouclé Sleigh Bed Frame", category: "Bedroom", img: bedIvory.url },
+  { name: "Luxe Panel Bedroom", category: "Bedroom", img: bedroomLuxe },
+  { name: "Charcoal Bouclé Bed Frame", category: "Bedroom", img: bedCharcoal },
+  { name: "Grey Tufted Panel Bed Frame", category: "Bedroom", img: bedGrey },
+  { name: "Ivory Bouclé Sleigh Bed Frame", category: "Bedroom", img: bedIvory },
 ];
 
 const INTERVAL = 3500;

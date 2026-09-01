@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
-import craftHands from "@/assets/craft-hands.jpg";
-import craftMood from "@/assets/craft-mood.jpg";
+const craftHands = "/images/craft-hands.jpg";
+const craftMood = "/images/craft-mood.jpg";
 
 export const Route = createFileRoute("/bespoke")({
   head: () => ({
