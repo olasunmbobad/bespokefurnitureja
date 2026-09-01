@@ -38,20 +38,21 @@
           "openWorldHint": false
         },
         "inputSchema": {
-          "$schema": "http://json-schema.org/draft-07/schema#",
           "type": "object",
           "properties": {
             "category": {
-              "description": "Optional category filter.",
               "type": "string",
               "enum": [
                 "Sofa",
                 "Dining",
                 "TV Console",
                 "Bedroom"
-              ]
+              ],
+              "description": "Optional category filter."
             }
-          }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
         },
         "outputSchema": null
       },
