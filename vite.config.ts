@@ -14,4 +14,7 @@ export default defineConfig({
       external: ['cloudflare:workers', 'node:async_hooks'],
     },
   },
+  optimizeDeps: {
+    exclude: ['@lovable.dev/mcp-js', '@lovable.dev/mcp-js/stacks/tanstack'],
+  },
 })
